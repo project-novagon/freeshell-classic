@@ -13,10 +13,10 @@ namespace better_comments
         public static void Main(string[] args)
         {   
             //FREESHELL v1.0
-            Console.WriteLine("Welcome to Freeshell!");
+            System.Console.WriteLine("Test");
             string? input = Console.ReadLine();
-
-
+           System.Console.WriteLine("Hi, " + input);
+            
         }
     }
 }
