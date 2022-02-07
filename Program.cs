@@ -21,8 +21,10 @@ namespace better_comments
               System.Console.WriteLine("FRESHELL.NET help \n no help now");
               Main(args);
            }
+            if(input == "exit")
+            {
+                Environment.Exit(0);
+            }
         }
-
-
     }
 }
