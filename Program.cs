@@ -13,9 +13,9 @@ namespace better_comments
         public static void Main(string[] args)
         {   
             //FREESHELL v1.0
-            System.Console.Write("Test");
+            System.Console.Write("$");
             string? input = Console.ReadLine();
-           System.Console.WriteLine("Hi, " + input);
+           System.Console.WriteLine("running " + input);
             
         }
     }
