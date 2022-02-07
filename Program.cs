@@ -13,10 +13,16 @@ namespace better_comments
         public static void Main(string[] args)
         {   
             //FREESHELL v1.0
-            System.Console.Write("$");
+            System.Console.Write(">");
             string? input = Console.ReadLine();
            System.Console.WriteLine("running " + input);
-            
+           if (input == "help")
+           {
+              System.Console.WriteLine("FRESHELL.NET help \n no help now");
+              Main(args);
+           }
         }
+
+
     }
 }
