@@ -13,7 +13,7 @@ namespace better_comments
         public static void Main(string[] args)
         {   
             //FREESHELL v1.0
-            System.Console.WriteLine("Test");
+            System.Console.Write("Test");
             string? input = Console.ReadLine();
            System.Console.WriteLine("Hi, " + input);
             
