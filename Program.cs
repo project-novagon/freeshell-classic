@@ -12,7 +12,7 @@ namespace better_comments
     {
         public static void Main(string[] args)
         {   
-            //FREESHELL v1.0
+            //*FREESHELL v1.0
             System.Console.Write(">");
             string? input = Console.ReadLine();
            System.Console.WriteLine("running " + input);
@@ -24,6 +24,12 @@ namespace better_comments
             if(input == "exit")
             {
                 Environment.Exit(0);
+            }
+
+            if (input == "proj")
+            {
+                System.Console.WriteLine("FRESHELL.NET1 by iDev \n GH repo: https://github.com/iDevYT/freeshell");
+                Main(args);
             }
         }
     }
