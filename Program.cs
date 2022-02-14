@@ -14,6 +14,7 @@ namespace better_comments
         {   
             //*FREESHELL v1.0
             // Made by iDev
+            System.Console.WriteLine("Welcome To FREESHELL v1.0! ");
             System.Console.Write(">");
             string? input = Console.ReadLine();
            System.Console.WriteLine("running " + input);
