@@ -34,7 +34,18 @@ namespace cmd_interprt
                 Main(args);
             }
 
-
+            if(input == "hack")
+            {
+                Console.ForegroundColor = System.ConsoleColor.Green;
+                int amount = 290;
+                while(amount <= 290)
+                {
+                     System.Console.WriteLine("FRESHELL 1.1.93.293");
+                     System.Console.WriteLine("By iDev");
+                }
+                Console.ForegroundColor = System.ConsoleColor.White;
+                Main(args);
+            }
         }
     }
 }
