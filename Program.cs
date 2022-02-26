@@ -6,7 +6,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace better_comments
+namespace cmd_interprt
 {
     public class Program
     {
