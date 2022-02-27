@@ -33,19 +33,6 @@ namespace cmd_interprt
                 System.Console.WriteLine("FRESHELL.NET1 by iDev \n GH repo: https://github.com/iDevYT/freeshell");
                 Main(args);
             }
-
-            if(input == "hack")
-            {
-                Console.ForegroundColor = System.ConsoleColor.Green;
-                int amount = 0;
-                while(amount <= 50)
-                {
-                     System.Console.WriteLine("FRESHELL 1.1.93.293");
-                     System.Console.WriteLine("By iDev");
-                     amount += 1;
-                }
-                Main(args);
-            }
         }
     }
 }
