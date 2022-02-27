@@ -37,13 +37,13 @@ namespace cmd_interprt
             if(input == "hack")
             {
                 Console.ForegroundColor = System.ConsoleColor.Green;
-                int amount = 290;
-                while(amount <= 290)
+                int amount = 0;
+                while(amount <= 50)
                 {
                      System.Console.WriteLine("FRESHELL 1.1.93.293");
                      System.Console.WriteLine("By iDev");
+                     amount += 1;
                 }
-                Console.ForegroundColor = System.ConsoleColor.White;
                 Main(args);
             }
         }
