@@ -13,3 +13,5 @@ C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\bin\Deb
 C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\bin\Debug\net6.0\freeshell.pdb
 C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\obj\Debug\net6.0\freeshell.genruntimeconfig.cache
 C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\obj\Debug\net6.0\ref\freeshell.dll
+C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\bin\Debug\net6.0\Figgle.dll
+C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\obj\Debug\net6.0\freeshell.csproj.CopyComplete
