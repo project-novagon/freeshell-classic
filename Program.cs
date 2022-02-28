@@ -12,8 +12,6 @@ namespace cmd_interprt
     {
         public static void Main(string[] args)
         {   
-            //*FREESHELL v1.0
-            // Made by iDev
             Console.WriteLine("Welcome To FREESHELL v1.0! ");
             Console.Write(">");
             string? input = Console.ReadLine();
