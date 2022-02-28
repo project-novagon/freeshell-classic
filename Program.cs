@@ -5,7 +5,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using Color = System.Drawing.Color;
+using Color = System.ConsoleColor;
 using Figgle;
 
 namespace cmd_interprt
@@ -14,8 +14,8 @@ namespace cmd_interprt
     {
         public static void Main(string[] args)
         {   
-            Color foregroundColor = Color.FromArgb(160, 255, 153);
-            string welcome = FiggleFonts.Standard.Render("Welcome To Freeshell");
+            Console.ForegroundColor = Color.Green;
+            string welcome = FiggleFonts.Standard.Render("Welcome To Freeshell!");
             System.Console.WriteLine(welcome);
             Console.Write(">");
             string? input = Console.ReadLine();
