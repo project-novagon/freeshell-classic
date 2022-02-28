@@ -43,6 +43,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Figgle": {
+              "target": "Package",
+              "version": "[0.4.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

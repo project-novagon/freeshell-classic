@@ -5,6 +5,8 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
+using Color = System.Drawing.Color;
+using Figgle;
 
 namespace cmd_interprt
 {
@@ -12,20 +14,21 @@ namespace cmd_interprt
     {
         public static void Main(string[] args)
         {   
-            Console.WriteLine("Welcome To FREESHELL v1.0! ");
+            Color foregroundColor = Color.FromArgb(160, 255, 153);
+            string welcome =  FiggleFonts.Standard.Render("Welcome To Freeshell");
             Console.Write(">");
             string? input = Console.ReadLine();
-           System.Console.WriteLine("running " + input);
-           if (input == "help")
-           {
+            Console.WriteLine("running " + input);
+            if (input == "help")
+            {
               System.Console.WriteLine("FRESHELL.NET help \n no help now");
               Main(args);
-           }
+            }
             if(input == "exit")
             {
                 Environment.Exit(0);
+            
             }
-
             if (input == "proj")
             {
                 System.Console.WriteLine("FRESHELL.NET1 by iDev \n GH repo: https://github.com/iDevYT/freeshell \n Enjoy! ");
