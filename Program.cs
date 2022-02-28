@@ -30,7 +30,7 @@ namespace cmd_interprt
 
             if (input == "proj")
             {
-                System.Console.WriteLine("FRESHELL.NET1 by iDev \n GH repo: https://github.com/iDevYT/freeshell");
+                System.Console.WriteLine("FRESHELL.NET1 by iDev \n GH repo: https://github.com/iDevYT/freeshell \n Enjoy!");
                 Main(args);
             }
         }
