@@ -4504,11 +4504,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Miami\\OneDrive\\Desktop\\Most of my files\\Project\\repos\\freeshell\\freeshell.csproj",
+      "projectUniqueName": "c:\\Users\\Miami\\OneDrive\\Desktop\\Most of my files\\Project\\repos\\freeshell\\freeshell.csproj",
       "projectName": "freeshell",
-      "projectPath": "C:\\Users\\Miami\\OneDrive\\Desktop\\Most of my files\\Project\\repos\\freeshell\\freeshell.csproj",
+      "projectPath": "c:\\Users\\Miami\\OneDrive\\Desktop\\Most of my files\\Project\\repos\\freeshell\\freeshell.csproj",
       "packagesPath": "C:\\Users\\Miami\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Miami\\OneDrive\\Desktop\\Most of my files\\Project\\repos\\freeshell\\obj\\",
+      "outputPath": "c:\\Users\\Miami\\OneDrive\\Desktop\\Most of my files\\Project\\repos\\freeshell\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -15,7 +15,8 @@ namespace cmd_interprt
         public static void Main(string[] args)
         {   
             Color foregroundColor = Color.FromArgb(160, 255, 153);
-            string welcome =  FiggleFonts.Standard.Render("Welcome To Freeshell");
+            string welcome = FiggleFonts.Standard.Render("Welcome To Freeshell");
+            System.Console.WriteLine(welcome);
             Console.Write(">");
             string? input = Console.ReadLine();
             Console.WriteLine("running " + input);

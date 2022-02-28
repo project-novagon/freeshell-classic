@@ -7,4 +7,5 @@ The Filepath for the application is:
 ## **Note**
 To compile the application,(_if you make changes_) you need to run `dotnet build`  
 
-###### _it can run on linux too..._
+###### _it can run on linux too..._  
+ iDev
