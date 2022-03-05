@@ -26,19 +26,16 @@ namespace freeshell
             {
             case "help":
                     System.Console.WriteLine("FRESHELL.NET help \n no help now");
-                    Main(args);
                     break;
             case "exit":
                     Console.ForegroundColor = Color.White;
                     Environment.Exit(0);
-                    Main(args);
                     break;
             case "proj":
                 System.Console.WriteLine("FRESHELL.NET1 by iDev \n GH repo: https://github.com/iDevYT/freeshell \n Enjoy! ");
                 break;
             default:
             	System.Console.WriteLine($"{input} Not Found. Type help for help.");
-                Main(args);
                 break;	
             }   
         }
