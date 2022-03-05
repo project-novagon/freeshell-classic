@@ -44,7 +44,7 @@ namespace freeshell
             else
             {
                 System.Console.WriteLine("Unknown Command! type 'help' for help.");
-                Main(args);
+                
             }
         }
     }
