@@ -12,32 +12,39 @@ namespace freeshell
 {
     public class Program
     {
-        public static string? input = Console.ReadLine();
 
         public static void Main(string[] args)
         {   
             Console.ForegroundColor = Color.Green;
             string welcome = FiggleFonts.Standard.Render("Welcome To Freeshell!");
-            System.Console.WriteLine(welcome);
             Console.Write(">");
+            System.Console.WriteLine(welcome);
+            string? input = Console.ReadLine();
             Console.WriteLine($"running {input}");
-            // ! * BUG when i run the app, an run a command, it exits the app BUG *
-            switch (input)
+            bool commands = true;
+            while (commands == true) 
             {
-            case "help":
+            switch (input)
+                {
+                 case "help":
                     System.Console.WriteLine("FRESHELL.NET help \n no help now");
+                commands = false;
                     break;
-            case "exit":
+                case "exit":
                     Console.ForegroundColor = Color.White;
                     Environment.Exit(0);
+                    commands = false; 
                     break;
-            case "proj":
+                case "proj":
                 System.Console.WriteLine("FRESHELL.NET1 by iDev \n GH repo: https://github.com/iDevYT/freeshell \n Enjoy! ");
+                commands = false;
                 break;
-            default:
+                default:
             	System.Console.WriteLine($"{input} Not Found. Type help for help.");
+                commands = false;
                 break;	
             }   
+            }           
         }
     }
 }
