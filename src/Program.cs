@@ -27,6 +27,7 @@ namespace freeshell
               Main(args);
             }else if(input == "exit")
             {
+                Console.ForegroundColor = Color.White;
                 Environment.Exit(0);
             
             }else if (input == "proj")
@@ -45,7 +46,6 @@ namespace freeshell
             {   
                 
                 System.Console.WriteLine("Unknown Command! type 'help' for help.");
-                
             }
         }
     }
