@@ -21,20 +21,24 @@ namespace freeshell
             System.Console.WriteLine(welcome);
             Console.Write(">");
             Console.WriteLine($"running {input}");
+            // ! * BUG when i run the app, an run a command, it exits the app BUG *
             switch (input)
             {
             case "help":
                     System.Console.WriteLine("FRESHELL.NET help \n no help now");
+                    Main(args);
                     break;
             case "exit":
                     Console.ForegroundColor = Color.White;
                     Environment.Exit(0);
+                    Main(args);
                     break;
             case "proj":
                 System.Console.WriteLine("FRESHELL.NET1 by iDev \n GH repo: https://github.com/iDevYT/freeshell \n Enjoy! ");
                 break;
             default:
-            	System.Console.WriteLine("Unknown command. Type help for help.");
+            	System.Console.WriteLine($"{input} Not Found. Type help for help.");
+                Main(args);
                 break;	
             }   
         }
