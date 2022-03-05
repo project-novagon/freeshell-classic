@@ -23,7 +23,6 @@ namespace freeshell
             Console.WriteLine($"running {input}");
             switch (input)
             {
-
             case "help":
                     System.Console.WriteLine("FRESHELL.NET help \n no help now");
                     break;
