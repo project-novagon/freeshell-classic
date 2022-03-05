@@ -21,33 +21,21 @@ namespace freeshell
             System.Console.WriteLine(welcome);
             Console.Write(">");
             Console.WriteLine($"running {input}");
-            if (input == "help")
+            switch(input)
             {
-              System.Console.WriteLine("FRESHELL.NET help \n no help now");
-              Main(args);
-            }else if(input == "exit")
-            {
-                Console.ForegroundColor = Color.White;
-                Environment.Exit(0);
-            
-            }else if (input == "proj")
-            {
-                System.Console.WriteLine("FRESHELL.NET1 by iDev \n GH repo: https://github.com/iDevYT/freeshell \n Enjoy! ");
-                Main(args);
-            }else if(input == "fs")
-            {
-                fsa.RunFilePath();
-            }else if (string.IsNullOrEmpty(input))
-            {
-                // TODO: i need to return to the Main() method. can someone help me?
-                System.Console.WriteLine("Type somthing! type 'help' for help.");
-                return;
-            
-            }
-            else
-            {   
-                System.Console.WriteLine("Unknown Command! type 'help' for help.");
-
+                case "help":
+                    System.Console.WriteLine("FRESHELL.NET help \n no help now");
+                    break;
+                case "exit":
+                    Console.ForegroundColor = Color.White;
+                    Environment.Exit(0);
+                    break;
+                case "proj":
+                    System.Console.WriteLine("FRESHELL.NET1 by iDev \n GH repo: https://github.com/iDevYT/freeshell \n Enjoy! ");
+                    break;
+                default:
+                  System.Console.WriteLine("Unknown Command! type 'help' for help.");
+                  break;
             }
         }
     }
