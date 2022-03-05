@@ -21,22 +21,23 @@ namespace freeshell
             System.Console.WriteLine(welcome);
             Console.Write(">");
             Console.WriteLine($"running {input}");
-            switch(input)
+            switch (input)
             {
-                case "help":
+
+            case "help":
                     System.Console.WriteLine("FRESHELL.NET help \n no help now");
                     break;
-                case "exit":
+            case "exit":
                     Console.ForegroundColor = Color.White;
                     Environment.Exit(0);
                     break;
-                case "proj":
-                    System.Console.WriteLine("FRESHELL.NET1 by iDev \n GH repo: https://github.com/iDevYT/freeshell \n Enjoy! ");
-                    break;
-                default:
-                  System.Console.WriteLine("Unknown Command! type 'help' for help.");
-                  break;
-            }
+            case "proj":
+                System.Console.WriteLine("FRESHELL.NET1 by iDev \n GH repo: https://github.com/iDevYT/freeshell \n Enjoy! ");
+                break;
+            default:
+            	System.Console.WriteLine("Unknown command. Type help for help.");
+                break;	
+            }   
         }
     }
 }
