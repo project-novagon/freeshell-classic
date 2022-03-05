@@ -20,7 +20,7 @@ namespace freeshell
             string welcome = FiggleFonts.Standard.Render("Welcome To Freeshell!");
             System.Console.WriteLine(welcome);
             Console.Write(">");
-            Console.WriteLine("running " + input);
+            Console.WriteLine($"running {input}");
             if (input == "help")
             {
               System.Console.WriteLine("FRESHELL.NET help \n no help now");
@@ -42,7 +42,8 @@ namespace freeshell
                 Main(args);
             }
             else
-            {
+            {   
+                
                 System.Console.WriteLine("Unknown Command! type 'help' for help.");
                 
             }
