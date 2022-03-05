@@ -39,13 +39,15 @@ namespace freeshell
                 fsa.RunFilePath();
             }else if (string.IsNullOrEmpty(input))
             {
+                // TODO: i need to return to the Main() method. can someone help me?
                 System.Console.WriteLine("Type somthing! type 'help' for help.");
-                Main(args);
+                return;
+            
             }
             else
             {   
-                
                 System.Console.WriteLine("Unknown Command! type 'help' for help.");
+
             }
         }
     }
