@@ -1,6 +1,6 @@
 using Figgle;
 
-namespace freeshell.src
+namespace freeshell
 {
     public class figlet
     {
