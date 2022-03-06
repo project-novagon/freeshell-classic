@@ -20,27 +20,27 @@ namespace freeshell
             while (commands) 
             {
             Console.ForegroundColor = Color.Green;
-            System.Console.WriteLine(welcome);
+            Console.WriteLine(welcome);
             Console.Write(">");
             string? input = Console.ReadLine();
             Console.WriteLine($"running {input}");
             switch (input)
                 {
                 case "help":
-                    System.Console.WriteLine("FRESHELL.NET help \n no help now");
+                    Console.WriteLine("FRESHELL.NET help \n no help now");
                     break;
                 case "exit":
                     Console.ForegroundColor = Color.White;
-                    System.Console.WriteLine("Bye!");
+                    Console.WriteLine("Bye!");
                     commands = false;
                     break;
                 case "proj":
-                    System.Console.WriteLine("FRESHELL.NET1 by iDev \n GH repo: https://github.com/iDevYT/freeshell \n Enjoy! ");
+                    Console.WriteLine("FRESHELL.NET1 by iDev \n GH repo: https://github.com/iDevYT/freeshell \n Enjoy! ");
                     break;
                 default:
-            	    System.Console.WriteLine($"{input} Not Found. Type help for help.");
+            	    Console.WriteLine($"{input} Not Found. Type help for help.");
                     break;	
-            }   
+            	}   
             }           
         }
     }
