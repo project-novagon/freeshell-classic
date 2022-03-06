@@ -37,6 +37,9 @@ namespace freeshell
                 case "proj":
                     Console.WriteLine("FRESHELL.NET1 by iDev \n GH repo: https://github.com/iDevYT/freeshell \n Enjoy! ");
                     break;
+                case "figlet":
+                    freeshell.src.figlet.Run();
+                    break;    
                 default:
             	    Console.WriteLine($"{input} Not Found. Type help for help.");
                     break;	
