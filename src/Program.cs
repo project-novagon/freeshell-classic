@@ -15,31 +15,31 @@ namespace freeshell
 
         public static void Main(string[] args)
         {   
+            string welcome = FiggleFonts.Standard.Render("Welcome To Freeshell!");
             bool commands = true;
             while (commands) 
             {
             Console.ForegroundColor = Color.Green;
-            string welcome = FiggleFonts.Standard.Render("Welcome To Freeshell!");
             System.Console.WriteLine(welcome);
             Console.Write(">");
             string? input = Console.ReadLine();
             Console.WriteLine($"running {input}");
             switch (input)
                 {
-                 case "help":
+                case "help":
                     System.Console.WriteLine("FRESHELL.NET help \n no help now");
                     break;
                 case "exit":
                     Console.ForegroundColor = Color.White;
-                    Environment.Exit(0);
+                    System.Console.WriteLine("Bye!");
                     commands = false;
                     break;
                 case "proj":
-                System.Console.WriteLine("FRESHELL.NET1 by iDev \n GH repo: https://github.com/iDevYT/freeshell \n Enjoy! ");
-                break;
+                    System.Console.WriteLine("FRESHELL.NET1 by iDev \n GH repo: https://github.com/iDevYT/freeshell \n Enjoy! ");
+                    break;
                 default:
-            	System.Console.WriteLine($"{input} Not Found. Type help for help.");
-                break;	
+            	    System.Console.WriteLine($"{input} Not Found. Type help for help.");
+                    break;	
             }   
             }           
         }
