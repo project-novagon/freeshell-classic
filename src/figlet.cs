@@ -7,8 +7,8 @@ namespace freeshell
         public static void Run(string? input)
         {
             input = Console.ReadLine();
-            string welcome = FiggleFonts.Standard.Render(input);
-            System.Console.WriteLine(welcome);
+            string figletinput = FiggleFonts.Standard.Render(input);
+            System.Console.WriteLine(figletinput);
         }
     }
 }
