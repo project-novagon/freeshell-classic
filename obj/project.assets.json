@@ -4504,11 +4504,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Miami\\OneDrive\\Desktop\\Most of my files\\Project\\repos\\freeshell\\freeshell.csproj",
+      "projectUniqueName": "C:\\Users\\Miami\\OneDrive\\Desktop\\Most of my files\\Project\\repos\\freeshell\\freeshell.csproj",
       "projectName": "freeshell",
-      "projectPath": "c:\\Users\\Miami\\OneDrive\\Desktop\\Most of my files\\Project\\repos\\freeshell\\freeshell.csproj",
+      "projectPath": "C:\\Users\\Miami\\OneDrive\\Desktop\\Most of my files\\Project\\repos\\freeshell\\freeshell.csproj",
       "packagesPath": "C:\\Users\\Miami\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Miami\\OneDrive\\Desktop\\Most of my files\\Project\\repos\\freeshell\\obj\\",
+      "outputPath": "C:\\Users\\Miami\\OneDrive\\Desktop\\Most of my files\\Project\\repos\\freeshell\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4561,7 +4561,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
