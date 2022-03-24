@@ -16,11 +16,11 @@ namespace freeshell
         {
             
             string welcome = FiggleFonts.Standard.Render("Welcome To Freeshell!");
+            Console.WriteLine(welcome);
             bool commands = true;
             while (commands)
             {
                 Console.ForegroundColor = Color.Green;
-                Console.WriteLine(welcome);
                 Console.Write(">");
                 string? input = Console.ReadLine();
                 Console.WriteLine($"running {input}");
