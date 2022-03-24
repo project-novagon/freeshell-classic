@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -27,7 +26,7 @@ namespace freeshell
             switch (input)
                 {
                 case "help":
-                    Console.WriteLine("FRESHELL.NET help \n no help now");
+                    Console.WriteLine("FRESHELL.NET help \n proj: shows the project link \n exit: exits the program \n figlet: make a text to ascii text. \n Thanks");
                     break;
                 case "exit":
                     Console.ForegroundColor = Color.White;
