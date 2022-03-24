@@ -13,37 +13,38 @@ namespace freeshell
     {
 
         public static void Main(string[] args)
-        {   
+        {
+            
             string welcome = FiggleFonts.Standard.Render("Welcome To Freeshell!");
             bool commands = true;
-            while (commands) 
+            while (commands)
             {
-            Console.ForegroundColor = Color.Green;
-            Console.WriteLine(welcome);
-            Console.Write(">");
-            string? input = Console.ReadLine();
-            Console.WriteLine($"running {input}");
-            switch (input)
+                Console.ForegroundColor = Color.Green;
+                Console.WriteLine(welcome);
+                Console.Write(">");
+                string? input = Console.ReadLine();
+                Console.WriteLine($"running {input}");
+                switch (input)
                 {
-                case "help":
-                    Console.WriteLine("FRESHELL.NET help \n proj: shows the project link \n exit: exits the program \n figlet: make a text to ascii text. \n Thanks");
-                    break;
-                case "exit":
-                    Console.ForegroundColor = Color.White;
-                    Console.WriteLine("Bye!");
-                    commands = false;
-                    break;
-                case "proj":
-                    Console.WriteLine("FRESHELL.NET1 by iDev \n GH repo: https://github.com/iDevYT/freeshell \n Enjoy! ");
-                    break;
-                case "figlet":
-                    figlet.Run(input);
-                    break;    
-                default:
-            	    Console.WriteLine($"{input} Not Found. Type help for help.");
-                    break;	
-            	}   
-            }           
+                    case "help":
+                        Console.WriteLine("FRESHELL.NET help \n proj: shows the project link \n exit: exits the program \n figlet: make a text to ascii text. \n Thanks");
+                        break;
+                    case "exit":
+                        Console.ForegroundColor = Color.White;
+                        Console.WriteLine("Bye!");
+                        commands = false;
+                        break;
+                    case "proj":
+                        Console.WriteLine("FRESHELL.NET1 by iDev \n GH repo: https://github.com/iDevYT/freeshell \n Enjoy! ");
+                        break;
+                    case "figlet":
+                        figlet.Run(input);
+                        break;
+                    default:
+                        Console.WriteLine($"{input} Not Found. Type help for help.");
+                        break;
+                }
+            }
         }
     }
 }
