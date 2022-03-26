@@ -27,7 +27,7 @@ namespace freeshell
                 switch (input)
                 {
                     case "help":
-                        Console.WriteLine("FRESHELL.NET help \n proj: shows the project link \n exit: exits the program \n figlet: make a text to ascii text. \n Thanks");
+                        Console.WriteLine("FRESHELL.NET help \n proj: shows the project link \n exit: exits the program \n figlet: make a text to ascii text. \n clcon: clears the console \n Thanks");
                         break;
                     case "exit":
                         Console.ForegroundColor = Color.White;
@@ -39,6 +39,9 @@ namespace freeshell
                         break;
                     case "figlet":
                         figlet.Run(input);
+                        break;
+                    case "clcon":
+                        Console.Clear();
                         break;
                     default:
                         Console.WriteLine($"{input} Not Found. Type help for help.");
