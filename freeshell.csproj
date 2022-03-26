@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="Figgle" Version="0.4.0" />
+    <PackageReference Include="pastel" Version="3.0.0" />
   </ItemGroup>
 
 </Project>

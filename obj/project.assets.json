@@ -93,6 +93,15 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
+      "Pastel/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Pastel.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Pastel.dll": {}
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -1301,6 +1310,23 @@
         "dotnet_library_license.txt",
         "netstandard.library.1.6.1.nupkg.sha512",
         "netstandard.library.nuspec"
+      ]
+    },
+    "Pastel/3.0.0": {
+      "sha512": "Y1EEIxj52o0mO4J/AKwtSDdVoFSNFZcBDm1dtPrngMkgne5QgcC5hIs+9gd31jp5ASEZ2YZpgI88xADSDCNZ7w==",
+      "type": "package",
+      "path": "pastel/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "icon.png",
+        "lib/net6.0/Pastel.dll",
+        "lib/net6.0/Pastel.xml",
+        "lib/netstandard2.0/Pastel.dll",
+        "lib/netstandard2.0/Pastel.xml",
+        "pastel.3.0.0.nupkg.sha512",
+        "pastel.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -4494,7 +4520,8 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Figgle >= 0.4.0"
+      "Figgle >= 0.4.0",
+      "pastel >= 3.0.0"
     ]
   },
   "packageFolders": {
@@ -4544,6 +4571,10 @@
           "Figgle": {
             "target": "Package",
             "version": "[0.4.0, )"
+          },
+          "pastel": {
+            "target": "Package",
+            "version": "[3.0.0, )"
           }
         },
         "imports": [
