@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Threading;
-using System.Threading.Tasks;
-using Color = System.ConsoleColor;
+﻿using Color = System.ConsoleColor;
 using Figgle;
 
 namespace freeshell
@@ -14,9 +8,10 @@ namespace freeshell
 
         public static void Main(string[] args)
         {
-            
+            ProgramInfo progInfo = new ProgramInfo();
             string welcome = FiggleFonts.Standard.Render("Welcome To Freeshell!");
             Console.WriteLine(welcome);
+            progInfo.PrintInfo();
             bool commands = true;
             while (commands)
             {
@@ -48,6 +43,20 @@ namespace freeshell
                         break;
                 }
             }
+        }
+    }
+
+    public class ProgramInfo{
+        public double VersionNumber { get; set; }
+        public string VersionName { get; set; }
+
+        public ProgramInfo(){
+            VersionNumber = 1.9;
+            VersionName = "Freeshell";
+        }
+
+        public void PrintInfo(){
+            System.Console.WriteLine($"your {VersionName} is {VersionNumber}.");
         }
     }
 }
