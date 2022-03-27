@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[0.4.0, )"
             },
+            "Igtampe.BasicWindows": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
             "pastel": {
               "target": "Package",
               "version": "[3.0.0, )"

@@ -1,10 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "snROZgAPep9+q0EUDdyhf9H2q8H1Msoqm6FBt0fHipWx1upluvNBCn2BIifxpcsyPgFqHuy1QokL7LMRo4D2Qw==",
+  "dgSpecHash": "Hh+4qhmfCpkQTcJjOzQgqaeOWASDj48KKsZV5OGQip13FXK80OCPJP9dAnibymrHOlYUCYtJLa/DG6mMsH541w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Miami\\OneDrive\\Desktop\\Most of my files\\Project\\repos\\freeshell\\freeshell.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Miami\\.nuget\\packages\\figgle\\0.4.0\\figgle.0.4.0.nupkg.sha512",
+    "C:\\Users\\Miami\\.nuget\\packages\\igtampe.basicfonts\\1.1.0\\igtampe.basicfonts.1.1.0.nupkg.sha512",
+    "C:\\Users\\Miami\\.nuget\\packages\\igtampe.basicgraphics\\1.1.0\\igtampe.basicgraphics.1.1.0.nupkg.sha512",
+    "C:\\Users\\Miami\\.nuget\\packages\\igtampe.basicrender\\1.1.0\\igtampe.basicrender.1.1.0.nupkg.sha512",
+    "C:\\Users\\Miami\\.nuget\\packages\\igtampe.basicwindows\\1.1.0\\igtampe.basicwindows.1.1.0.nupkg.sha512",
+    "C:\\Users\\Miami\\.nuget\\packages\\igtampe.dictionaryondisk\\1.0.0\\igtampe.dictionaryondisk.1.0.0.nupkg.sha512",
     "C:\\Users\\Miami\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Miami\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Miami\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",

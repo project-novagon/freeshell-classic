@@ -15,6 +15,64 @@
           "lib/netstandard1.3/Figgle.dll": {}
         }
       },
+      "Igtampe.BasicFonts/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Igtampe.BasicGraphics": "1.1.0",
+          "Igtampe.BasicRender": "1.1.0",
+          "Igtampe.DictionaryOnDisk": "1.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/BasicFonts.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BasicFonts.dll": {}
+        }
+      },
+      "Igtampe.BasicGraphics/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Igtampe.BasicRender": "1.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/BasicGraphics.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BasicGraphics.dll": {}
+        }
+      },
+      "Igtampe.BasicRender/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/BasicRender.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BasicRender.dll": {}
+        }
+      },
+      "Igtampe.BasicWindows/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Igtampe.BasicFonts": "1.1.0",
+          "Igtampe.BasicGraphics": "1.1.0",
+          "Igtampe.BasicRender": "1.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/BasicWindows.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BasicWindows.dll": {}
+        }
+      },
+      "Igtampe.DictionaryOnDisk/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/DictionaryOnDisk.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/DictionaryOnDisk.dll": {}
+        }
+      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -1229,6 +1287,81 @@
         "lib/netstandard1.3/Figgle.dll",
         "lib/netstandard1.3/Figgle.xml",
         "logo-square-256px.png"
+      ]
+    },
+    "Igtampe.BasicFonts/1.1.0": {
+      "sha512": "xTPxVUECArw89b4d+UDMO6pCP8mDpm80t3P/eQvkyuUtqigI92SschVKet2gAkwN78F8xSufqsE+E5/azVLnsg==",
+      "type": "package",
+      "path": "igtampe.basicfonts/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "BasicRender Icon.png",
+        "LICENSE",
+        "README.md",
+        "igtampe.basicfonts.1.1.0.nupkg.sha512",
+        "igtampe.basicfonts.nuspec",
+        "lib/netstandard2.0/BasicFonts.dll"
+      ]
+    },
+    "Igtampe.BasicGraphics/1.1.0": {
+      "sha512": "pti8HMBjksH1+/HL+fsgiYmc4aDg3XY63UKYAtSpy+IatRA0Dp8RR3QiZYcQdF3sQXew+aSEBVQkkg4fnS+50g==",
+      "type": "package",
+      "path": "igtampe.basicgraphics/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "BasicRender Icon.png",
+        "LICENSE",
+        "README.MD",
+        "igtampe.basicgraphics.1.1.0.nupkg.sha512",
+        "igtampe.basicgraphics.nuspec",
+        "lib/netstandard2.0/BasicGraphics.dll"
+      ]
+    },
+    "Igtampe.BasicRender/1.1.0": {
+      "sha512": "NyrThtQJBx1VyIbOyxBI65k0aLzN7g11OD5Ugl6YAkmYdFcmVx/XpXvnB/dpxmvO6EjzQiqXA2si7T4JJgqsKw==",
+      "type": "package",
+      "path": "igtampe.basicrender/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "BasicRender Icon.png",
+        "LICENSE",
+        "README.MD",
+        "igtampe.basicrender.1.1.0.nupkg.sha512",
+        "igtampe.basicrender.nuspec",
+        "lib/netstandard2.0/BasicRender.dll"
+      ]
+    },
+    "Igtampe.BasicWindows/1.1.0": {
+      "sha512": "7pbQwDPd0Qy3HQXStvmP1kseXzdknXJtchxh/cqswsEkH8UsJjx4EzfAm7j0pzZVZGmdwCk9+xsqW+G25mLwmg==",
+      "type": "package",
+      "path": "igtampe.basicwindows/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "BasicRender Icon.png",
+        "LICENSE",
+        "README.md",
+        "igtampe.basicwindows.1.1.0.nupkg.sha512",
+        "igtampe.basicwindows.nuspec",
+        "lib/netstandard2.0/BasicWindows.dll"
+      ]
+    },
+    "Igtampe.DictionaryOnDisk/1.0.0": {
+      "sha512": "0XFdPrNMOw1nYSYpNdJR0Zd4wuCXpKzJhkSsss3gBNvLyiIUe3e4YjbY6dKQv91S5ImjZOimsHFTUTVnXSKerw==",
+      "type": "package",
+      "path": "igtampe.dictionaryondisk/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "DOD Icon.png",
+        "LICENSE",
+        "igtampe.dictionaryondisk.1.0.0.nupkg.sha512",
+        "igtampe.dictionaryondisk.nuspec",
+        "lib/netstandard2.0/DictionaryOnDisk.dll",
+        "lib/netstandard2.0/DictionaryOnDisk.xml"
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
@@ -4521,6 +4654,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Figgle >= 0.4.0",
+      "Igtampe.BasicWindows >= 1.1.0",
       "pastel >= 3.0.0"
     ]
   },
@@ -4571,6 +4705,10 @@
           "Figgle": {
             "target": "Package",
             "version": "[0.4.0, )"
+          },
+          "Igtampe.BasicWindows": {
+            "target": "Package",
+            "version": "[1.1.0, )"
           },
           "pastel": {
             "target": "Package",

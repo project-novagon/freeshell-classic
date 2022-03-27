@@ -16,3 +16,8 @@ C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\obj\Deb
 C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\bin\Debug\net6.0\Figgle.dll
 C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\obj\Debug\net6.0\freeshell.csproj.CopyComplete
 C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\bin\Debug\net6.0\Pastel.dll
+C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\bin\Debug\net6.0\BasicFonts.dll
+C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\bin\Debug\net6.0\BasicGraphics.dll
+C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\bin\Debug\net6.0\BasicRender.dll
+C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\bin\Debug\net6.0\BasicWindows.dll
+C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\bin\Debug\net6.0\DictionaryOnDisk.dll
