@@ -23,14 +23,14 @@ namespace freeshell
                 switch (input)
                 {
                     case "help":
-                        Console.WriteLine("FRESHELL.NET help \n proj: shows the project link \n exit: exits the program \n figlet: make a text to ascii text. \n clcon: clears the console \n Thanks");
+                        Console.WriteLine("FRESHELL.NET help \n about: shows the project link \n exit: exits the program \n figlet: make a text to ascii text. \n clcon: clears the console \n Thanks");
                         break;
                     case "exit":
                         Console.ForegroundColor = Color.White;
                         Console.WriteLine("Bye!");
                         commands = false;
                         break;
-                    case "proj":
+                    case "about":
                         Console.WriteLine("FRESHELL.NET1 by iDev \n GH repo: https://github.com/iDevYT/freeshell \n Enjoy! ");
                         break;
                     case "figlet":
@@ -42,7 +42,7 @@ namespace freeshell
                     case "window":
                         Window win = new Window(Animated: true , Shadowed: true , LeftPos: 34, MainBG: ConsoleColor.Blue, HeaderBG: ConsoleColor.Red, HeaderFG: ConsoleColor.White , Length: 100, Height: 50, Title: "Welcome To Freeshell!", HeadPos: HeaderPosition.CENTER, TopPos: 10);
                         win.Execute();
-                        Thread.Sleep(5000);
+                        Thread.Sleep(2000);
                         win.Close();
                         break;
                     default:
