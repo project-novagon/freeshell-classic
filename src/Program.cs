@@ -31,7 +31,7 @@ namespace freeshell
                         commands = false;
                         break;
                     case "about":
-                        Console.WriteLine("FRESHELL.NET1 by iDev \n GH repo: https://github.com/iDevYT/freeshell \n Enjoy! ");
+                        Console.WriteLine($"{progInfo.VersionName} version {progInfo.VersionNumber} by {progInfo.Author} \n GH repo: https://github.com/iDevYT/freeshell \n Enjoy! ");
                         break;
                     case "figlet":
                         figlet.Run(input);
@@ -56,10 +56,14 @@ namespace freeshell
     public class ProgramInfo{
         public double VersionNumber { get; set; }
         public string VersionName { get; set; }
+        public string Author { get; set; }
+
+
 
         public ProgramInfo(){
             VersionNumber = 1.9;
             VersionName = "Freeshell";
+            Author = "iDevYT";
         }
 
         public void PrintInfo(){
