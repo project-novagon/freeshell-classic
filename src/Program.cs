@@ -40,7 +40,7 @@ namespace freeshell
                         Console.Clear();
                         break;
                     case "window":
-                        Window win = new Window(Animated: true , Shadowed: true , LeftPos: 34, MainBG: ConsoleColor.Blue, HeaderBG: ConsoleColor.Red, HeaderFG: ConsoleColor.White , Length: 100, Height: 50, Title: "Welcome To Freeshell!", HeadPos: HeaderPosition.CENTER, TopPos: 10);
+                        Window win = new Window(Animated: true , Shadowed: true , LeftPos: 34, MainBG: ConsoleColor.Blue, HeaderBG: ConsoleColor.Red, HeaderFG: ConsoleColor.White , Length: 100, Height: 50, Title: "Welcome To Freeshell!", HeadPos: HeaderPosition.CENTER, TopPos: 50);
                         win.Execute();
                         Thread.Sleep(2000);
                         win.Close();
