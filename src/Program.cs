@@ -1,4 +1,4 @@
-﻿using Igtampe.BasicWindows;
+﻿using System.Diagnostics;
 using Color = System.ConsoleColor;
 using Figgle;
 
@@ -39,12 +39,10 @@ namespace freeshell
                     case "clcon":
                         Console.Clear();
                         break;
-                    case "window":
-                        Window win = new Window(Animated: true , Shadowed: true , LeftPos: 34, MainBG: ConsoleColor.Blue, HeaderBG: ConsoleColor.Red, HeaderFG: ConsoleColor.White , Length: 100, Height: 50, Title: "Welcome To Freeshell!", HeadPos: HeaderPosition.CENTER, TopPos: 50);
-                        win.Execute();
-                        Thread.Sleep(2000);
-                        win.Close();
-                        break;
+                    case "py":
+                        System.Console.WriteLine("Make sure to install python.");
+                        Process.Start(@"C:\Python39\python.exe");
+                        break;     
                     default:
                         Console.WriteLine($"{input} Not Found. Type help for help.");
                         break;

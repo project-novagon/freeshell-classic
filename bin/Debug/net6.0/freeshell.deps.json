@@ -8,9 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "freeshell/1.0.0": {
         "dependencies": {
-          "Figgle": "0.4.0",
-          "Igtampe.BasicWindows": "1.1.0",
-          "Pastel": "3.0.0"
+          "Figgle": "0.4.0"
         },
         "runtime": {
           "freeshell.dll": {}
@@ -25,59 +23,6 @@
           "lib/netstandard1.3/Figgle.dll": {
             "assemblyVersion": "0.4.0.0",
             "fileVersion": "0.4.0.0"
-          }
-        }
-      },
-      "Igtampe.BasicFonts/1.1.0": {
-        "dependencies": {
-          "Igtampe.BasicGraphics": "1.1.0",
-          "Igtampe.BasicRender": "1.1.0",
-          "Igtampe.DictionaryOnDisk": "1.0.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/BasicFonts.dll": {
-            "assemblyVersion": "1.2.0.0",
-            "fileVersion": "3.1.0.0"
-          }
-        }
-      },
-      "Igtampe.BasicGraphics/1.1.0": {
-        "dependencies": {
-          "Igtampe.BasicRender": "1.1.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/BasicGraphics.dll": {
-            "assemblyVersion": "3.1.0.0",
-            "fileVersion": "3.1.0.0"
-          }
-        }
-      },
-      "Igtampe.BasicRender/1.1.0": {
-        "runtime": {
-          "lib/netstandard2.0/BasicRender.dll": {
-            "assemblyVersion": "3.1.0.0",
-            "fileVersion": "3.1.0.0"
-          }
-        }
-      },
-      "Igtampe.BasicWindows/1.1.0": {
-        "dependencies": {
-          "Igtampe.BasicFonts": "1.1.0",
-          "Igtampe.BasicGraphics": "1.1.0",
-          "Igtampe.BasicRender": "1.1.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/BasicWindows.dll": {
-            "assemblyVersion": "3.1.0.0",
-            "fileVersion": "3.1.0.0"
-          }
-        }
-      },
-      "Igtampe.DictionaryOnDisk/1.0.0": {
-        "runtime": {
-          "lib/netstandard2.0/DictionaryOnDisk.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.0.0"
           }
         }
       },
@@ -136,14 +81,6 @@
           "System.Threading.Timer": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0"
-        }
-      },
-      "Pastel/3.0.0": {
-        "runtime": {
-          "lib/net6.0/Pastel.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
-          }
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
@@ -770,41 +707,6 @@
       "path": "figgle/0.4.0",
       "hashPath": "figgle.0.4.0.nupkg.sha512"
     },
-    "Igtampe.BasicFonts/1.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-xTPxVUECArw89b4d+UDMO6pCP8mDpm80t3P/eQvkyuUtqigI92SschVKet2gAkwN78F8xSufqsE+E5/azVLnsg==",
-      "path": "igtampe.basicfonts/1.1.0",
-      "hashPath": "igtampe.basicfonts.1.1.0.nupkg.sha512"
-    },
-    "Igtampe.BasicGraphics/1.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-pti8HMBjksH1+/HL+fsgiYmc4aDg3XY63UKYAtSpy+IatRA0Dp8RR3QiZYcQdF3sQXew+aSEBVQkkg4fnS+50g==",
-      "path": "igtampe.basicgraphics/1.1.0",
-      "hashPath": "igtampe.basicgraphics.1.1.0.nupkg.sha512"
-    },
-    "Igtampe.BasicRender/1.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-NyrThtQJBx1VyIbOyxBI65k0aLzN7g11OD5Ugl6YAkmYdFcmVx/XpXvnB/dpxmvO6EjzQiqXA2si7T4JJgqsKw==",
-      "path": "igtampe.basicrender/1.1.0",
-      "hashPath": "igtampe.basicrender.1.1.0.nupkg.sha512"
-    },
-    "Igtampe.BasicWindows/1.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-7pbQwDPd0Qy3HQXStvmP1kseXzdknXJtchxh/cqswsEkH8UsJjx4EzfAm7j0pzZVZGmdwCk9+xsqW+G25mLwmg==",
-      "path": "igtampe.basicwindows/1.1.0",
-      "hashPath": "igtampe.basicwindows.1.1.0.nupkg.sha512"
-    },
-    "Igtampe.DictionaryOnDisk/1.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-0XFdPrNMOw1nYSYpNdJR0Zd4wuCXpKzJhkSsss3gBNvLyiIUe3e4YjbY6dKQv91S5ImjZOimsHFTUTVnXSKerw==",
-      "path": "igtampe.dictionaryondisk/1.0.0",
-      "hashPath": "igtampe.dictionaryondisk.1.0.0.nupkg.sha512"
-    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
       "serviceable": true,
@@ -832,13 +734,6 @@
       "sha512": "sha512-WcSp3+vP+yHNgS8EV5J7pZ9IRpeDuARBPN28by8zqff1wJQXm26PVU8L3/fYLBJVU7BtDyqNVWq2KlCVvSSR4A==",
       "path": "netstandard.library/1.6.1",
       "hashPath": "netstandard.library.1.6.1.nupkg.sha512"
-    },
-    "Pastel/3.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Y1EEIxj52o0mO4J/AKwtSDdVoFSNFZcBDm1dtPrngMkgne5QgcC5hIs+9gd31jp5ASEZ2YZpgI88xADSDCNZ7w==",
-      "path": "pastel/3.0.0",
-      "hashPath": "pastel.3.0.0.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",
