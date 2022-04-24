@@ -38,6 +38,7 @@ namespace freeshell
                         break;
                     case "clcon":
                         Console.Clear();
+                        progInfo.PrintInfo();
                         break;    
                     default:
                         Console.WriteLine($"{input} Not Found. Type help for help.");
