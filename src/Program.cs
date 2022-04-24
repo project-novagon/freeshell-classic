@@ -23,7 +23,7 @@ namespace freeshell
                 switch (input)
                 {
                     case "help":
-                        Console.WriteLine("FRESHELL.NET help \n about: shows the project link \n exit: exits the program \n figlet: make a text to ascii text. \n clcon: clears the console \n Thanks");
+                        Console.WriteLine("FRESHELL.NET help \n about: shows the project link \n exit: exits the program \n figlet: make a text to ascii text. \n clcon: clears the console \n the project is built with c# and .NET\n Thanks");
                         break;
                     case "exit":
                         Console.ForegroundColor = Color.White;
@@ -38,11 +38,7 @@ namespace freeshell
                         break;
                     case "clcon":
                         Console.Clear();
-                        break;
-                    case "py":
-                        System.Console.WriteLine("Make sure to install python.");
-                        Process.Start(@"C:\Python39\python.exe");
-                        break;     
+                        break;    
                     default:
                         Console.WriteLine($"{input} Not Found. Type help for help.");
                         break;

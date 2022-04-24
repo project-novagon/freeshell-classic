@@ -4494,7 +4494,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "figgle >= 0.4.0"
+      "Figgle >= 0.4.0"
     ]
   },
   "packageFolders": {
@@ -4541,7 +4541,7 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
-          "figgle": {
+          "Figgle": {
             "target": "Package",
             "version": "[0.4.0, )"
           }
@@ -4561,7 +4561,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
