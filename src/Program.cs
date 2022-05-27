@@ -39,7 +39,10 @@ namespace freeshell
                     case "clcon":
                         Console.Clear();
                         progInfo.PrintInfo();
-                        break;    
+                        break;
+                    case "hello":
+                        System.Console.WriteLine("Hello World!"); 
+                        break;
                     default:
                         Console.WriteLine($"{input} Not Found. Type help for help.");
                         break;
@@ -56,7 +59,7 @@ namespace freeshell
 
 
         public ProgramInfo(){
-            VersionNumber = 1.9;
+            VersionNumber = 2.0;
             VersionName = "Freeshell";
             Author = "iDevYT";
         }
