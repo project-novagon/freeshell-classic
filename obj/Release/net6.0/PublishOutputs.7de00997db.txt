@@ -1,0 +1,6 @@
+/workspaces/freeshell/bin/Release/net6.0/publish/freeshell
+/workspaces/freeshell/bin/Release/net6.0/publish/freeshell.dll
+/workspaces/freeshell/bin/Release/net6.0/publish/freeshell.deps.json
+/workspaces/freeshell/bin/Release/net6.0/publish/freeshell.runtimeconfig.json
+/workspaces/freeshell/bin/Release/net6.0/publish/freeshell.pdb
+/workspaces/freeshell/bin/Release/net6.0/publish/Figgle.dll
