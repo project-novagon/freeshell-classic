@@ -68,4 +68,4 @@ namespace freeshell
             System.Console.WriteLine($"your {VersionName} is {VersionNumber}. and the .net version is {typeof(string).Assembly.ImageRuntimeVersion}");
         }
     }
-}./
+}
