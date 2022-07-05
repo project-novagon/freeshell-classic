@@ -65,7 +65,7 @@ namespace freeshell
         }
 
         public void PrintInfo(){
-            System.Console.WriteLine($"your {VersionName} is {VersionNumber}.");
+            System.Console.WriteLine($"your {VersionName} is {VersionNumber}. and the .net version is {typeof(string).Assembly.ImageRuntimeVersion}");
         }
     }
-}
+}./
