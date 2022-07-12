@@ -43,6 +43,10 @@ namespace freeshell
                     case "hello":
                         System.Console.WriteLine("Hello World!"); 
                         break;
+                    case "reload":
+                        System.Console.WriteLine("Reloading...");
+                        Console.WriteLine(welcome);
+                        break;
                     default:
                         Console.WriteLine($"{input} Not Found. Type help for help.");
                         break;
