@@ -1,5 +1,5 @@
 # free.shell
-![Freeshell Badge](https://img.shields.io/badge/Freeshell-Contribute%20Now!-blue) ![Last Commit](https://img.shields.io/github/last-commit/iDevYT/freeshell?style=flat)
+![Freeshell Badge](https://img.shields.io/badge/Freeshell-Contribute%20Now!-blue) ![Last Commit](https://img.shields.io/github/last-commit/iDevYT/freeshell?style=flat) ![Pages Build](https://img.shields.io/github/workflow/status/iDevYT/freeshell/pages-build-deployment?label=Pages%20Build)
 
 
 Freeshell is a open-source CLI App  
