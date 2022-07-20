@@ -4,8 +4,8 @@
 
 whatever it is, just use an OSS terminal
 ### Features:
-- Fun Figgle Splash Screen!
-- Shows .NET Version you're on!
-- Gets Always new features!
+- Shows .NET Version you're on
+- Gets Always new features
+- Open-Source (OSS)
 **Made by iDev**
 ![Freeshell splash pic](https://user-images.githubusercontent.com/102538497/179985032-ceff1a3d-ed1c-4f47-b64f-d33fbf719349.png)
