@@ -14,4 +14,4 @@ Github will build the app by its own but you can still use `dotnet build && dotn
 
  _it **can** run on linux..._
 
-**made my iDev The Coder**
+**made by iDev The Coder**
