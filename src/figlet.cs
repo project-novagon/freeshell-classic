@@ -7,6 +7,7 @@ namespace freeshell
     {
         public static void Run(string? input)
         {
+            //figlet 1.0.0 by iDevYT
             bool commands = true;
             while(commands)
             {
