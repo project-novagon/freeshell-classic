@@ -1,17 +1,34 @@
-C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\bin\Debug\net6.0\freeshell.exe
-C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\bin\Debug\net6.0\freeshell.deps.json
-C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\bin\Debug\net6.0\freeshell.runtimeconfig.json
-C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\bin\Debug\net6.0\freeshell.dll
-C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\bin\Debug\net6.0\freeshell.pdb
-C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\bin\Debug\net6.0\Figgle.dll
-C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\obj\Debug\net6.0\freeshell.csproj.AssemblyReference.cache
-C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\obj\Debug\net6.0\freeshell.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\obj\Debug\net6.0\freeshell.AssemblyInfoInputs.cache
-C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\obj\Debug\net6.0\freeshell.AssemblyInfo.cs
-C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\obj\Debug\net6.0\freeshell.csproj.CoreCompileInputs.cache
-C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\obj\Debug\net6.0\freeshell.csproj.CopyComplete
-C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\obj\Debug\net6.0\freeshell.dll
-C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\obj\Debug\net6.0\refint\freeshell.dll
-C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\obj\Debug\net6.0\freeshell.pdb
-C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\obj\Debug\net6.0\freeshell.genruntimeconfig.cache
-C:\Users\Miami\OneDrive\Desktop\Most of my files\Project\repos\freeshell\obj\Debug\net6.0\ref\freeshell.dll
+C:/Users/Miami/OneDrive/Desktop/Most of my files/Project/repos/freeshell/bin/Debug/net6.0/freeshell.exe
+C:/Users/Miami/OneDrive/Desktop/Most of my files/Project/repos/freeshell/bin/Debug/net6.0/freeshell.deps.json
+C:/Users/Miami/OneDrive/Desktop/Most of my files/Project/repos/freeshell/bin/Debug/net6.0/freeshell.runtimeconfig.json
+C:/Users/Miami/OneDrive/Desktop/Most of my files/Project/repos/freeshell/bin/Debug/net6.0/freeshell.dll
+C:/Users/Miami/OneDrive/Desktop/Most of my files/Project/repos/freeshell/bin/Debug/net6.0/freeshell.pdb
+C:/Users/Miami/OneDrive/Desktop/Most of my files/Project/repos/freeshell/bin/Debug/net6.0/Figgle.dll
+C:/Users/Miami/OneDrive/Desktop/Most of my files/Project/repos/freeshell/obj/Debug/net6.0/freeshell.csproj.AssemblyReference.cache
+C:/Users/Miami/OneDrive/Desktop/Most of my files/Project/repos/freeshell/obj/Debug/net6.0/freeshell.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Miami/OneDrive/Desktop/Most of my files/Project/repos/freeshell/obj/Debug/net6.0/freeshell.AssemblyInfoInputs.cache
+C:/Users/Miami/OneDrive/Desktop/Most of my files/Project/repos/freeshell/obj/Debug/net6.0/freeshell.AssemblyInfo.cs
+C:/Users/Miami/OneDrive/Desktop/Most of my files/Project/repos/freeshell/obj/Debug/net6.0/freeshell.csproj.CoreCompileInputs.cache
+C:/Users/Miami/OneDrive/Desktop/Most of my files/Project/repos/freeshell/obj/Debug/net6.0/freeshell.csproj.CopyComplete
+C:/Users/Miami/OneDrive/Desktop/Most of my files/Project/repos/freeshell/obj/Debug/net6.0/freeshell.dll
+C:/Users/Miami/OneDrive/Desktop/Most of my files/Project/repos/freeshell/obj/Debug/net6.0/refint/freeshell.dll
+C:/Users/Miami/OneDrive/Desktop/Most of my files/Project/repos/freeshell/obj/Debug/net6.0/freeshell.pdb
+C:/Users/Miami/OneDrive/Desktop/Most of my files/Project/repos/freeshell/obj/Debug/net6.0/freeshell.genruntimeconfig.cache
+C:/Users/Miami/OneDrive/Desktop/Most of my files/Project/repos/freeshell/obj/Debug/net6.0/ref/freeshell.dll
+/home/iDev/Desktop/linux-recompile/freeshell/bin/Debug/net6.0/freeshell
+/home/iDev/Desktop/linux-recompile/freeshell/bin/Debug/net6.0/freeshell.deps.json
+/home/iDev/Desktop/linux-recompile/freeshell/bin/Debug/net6.0/freeshell.runtimeconfig.json
+/home/iDev/Desktop/linux-recompile/freeshell/bin/Debug/net6.0/freeshell.dll
+/home/iDev/Desktop/linux-recompile/freeshell/bin/Debug/net6.0/ref/freeshell.dll
+/home/iDev/Desktop/linux-recompile/freeshell/bin/Debug/net6.0/freeshell.pdb
+/home/iDev/Desktop/linux-recompile/freeshell/bin/Debug/net6.0/Figgle.dll
+/home/iDev/Desktop/linux-recompile/freeshell/obj/Debug/net6.0/freeshell.csproj.AssemblyReference.cache
+/home/iDev/Desktop/linux-recompile/freeshell/obj/Debug/net6.0/freeshell.GeneratedMSBuildEditorConfig.editorconfig
+/home/iDev/Desktop/linux-recompile/freeshell/obj/Debug/net6.0/freeshell.AssemblyInfoInputs.cache
+/home/iDev/Desktop/linux-recompile/freeshell/obj/Debug/net6.0/freeshell.AssemblyInfo.cs
+/home/iDev/Desktop/linux-recompile/freeshell/obj/Debug/net6.0/freeshell.csproj.CoreCompileInputs.cache
+/home/iDev/Desktop/linux-recompile/freeshell/obj/Debug/net6.0/freeshell.csproj.CopyComplete
+/home/iDev/Desktop/linux-recompile/freeshell/obj/Debug/net6.0/freeshell.dll
+/home/iDev/Desktop/linux-recompile/freeshell/obj/Debug/net6.0/ref/freeshell.dll
+/home/iDev/Desktop/linux-recompile/freeshell/obj/Debug/net6.0/freeshell.pdb
+/home/iDev/Desktop/linux-recompile/freeshell/obj/Debug/net6.0/freeshell.genruntimeconfig.cache
