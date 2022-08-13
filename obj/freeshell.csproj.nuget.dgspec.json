@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/iDev/Desktop/linux-recompile/freeshell/freeshell.csproj": {}
+    "/home/idev/Desktop/freeshell/freeshell.csproj": {}
   },
   "projects": {
-    "/home/iDev/Desktop/linux-recompile/freeshell/freeshell.csproj": {
+    "/home/idev/Desktop/freeshell/freeshell.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/iDev/Desktop/linux-recompile/freeshell/freeshell.csproj",
+        "projectUniqueName": "/home/idev/Desktop/freeshell/freeshell.csproj",
         "projectName": "freeshell",
-        "projectPath": "/home/iDev/Desktop/linux-recompile/freeshell/freeshell.csproj",
-        "packagesPath": "/home/iDev/.nuget/packages/",
-        "outputPath": "/home/iDev/Desktop/linux-recompile/freeshell/obj/",
+        "projectPath": "/home/idev/Desktop/freeshell/freeshell.csproj",
+        "packagesPath": "/home/idev/.nuget/packages/",
+        "outputPath": "/home/idev/Desktop/freeshell/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/iDev/.nuget/NuGet/NuGet.Config"
+          "/home/idev/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
