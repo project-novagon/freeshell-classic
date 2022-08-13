@@ -1,7 +1,7 @@
-﻿using freeshell.api.commands;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using Color = System.ConsoleColor;
 using Figgle;
+using System;
 
 namespace freeshell
 {
