@@ -15,3 +15,10 @@
 /home/idev/Desktop/freeshell/obj/Debug/net6.0/ref/freeshell.dll
 /home/idev/Desktop/freeshell/obj/Debug/net6.0/freeshell.pdb
 /home/idev/Desktop/freeshell/obj/Debug/net6.0/freeshell.genruntimeconfig.cache
+/home/idev/Desktop/freeshell/bin/freeshell/freeshell
+/home/idev/Desktop/freeshell/bin/freeshell/freeshell.deps.json
+/home/idev/Desktop/freeshell/bin/freeshell/freeshell.runtimeconfig.json
+/home/idev/Desktop/freeshell/bin/freeshell/freeshell.dll
+/home/idev/Desktop/freeshell/bin/freeshell/ref/freeshell.dll
+/home/idev/Desktop/freeshell/bin/freeshell/freeshell.pdb
+/home/idev/Desktop/freeshell/bin/freeshell/Figgle.dll
