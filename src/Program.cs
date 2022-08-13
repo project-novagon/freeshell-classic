@@ -47,6 +47,9 @@ namespace freeshell
                         System.Console.WriteLine("Reloading...");
                         Console.WriteLine(welcome);
                         break;
+                    case "color":
+                        Console.WriteLine("color: ");
+                        break;
                     default:
                         Console.WriteLine($"{input} Not Found. Type help for help.");
                         break;
