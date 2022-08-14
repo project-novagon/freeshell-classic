@@ -11,9 +11,9 @@ namespace freeshell
         public static void Main(string[] args)
         {
             ProgramInfo progInfo = new ProgramInfo();
-            Console.ForegroundColor = Color.Green;
             string welcome = FiggleFonts.Standard.Render("Welcome To Freeshell!");
             Console.WriteLine(welcome);
+            Console.ForegroundColor = Color.Green;
             progInfo.PrintInfo();
             bool commands = true;
             while (commands)
