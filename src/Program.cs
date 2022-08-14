@@ -11,13 +11,13 @@ namespace freeshell
         public static void Main(string[] args)
         {
             ProgramInfo progInfo = new ProgramInfo();
+            Console.ForegroundColor = Color.Green;
             string welcome = FiggleFonts.Standard.Render("Welcome To Freeshell!");
             Console.WriteLine(welcome);
             progInfo.PrintInfo();
             bool commands = true;
             while (commands)
             {
-                Console.ForegroundColor = Color.Green;
                 Console.Write(">");
                 string? input = Console.ReadLine();
                 Console.WriteLine($"running {input}");
@@ -50,9 +50,6 @@ namespace freeshell
                         break;
                     case "color":
                         Console.WriteLine("color: color is a freeshell utility that changes the system color. \n example: color --set {color}  \n colors: red, green, yellow, blue, magenta, cyan, white, gray, black");
-                        break;
-                    case "color --set":
-                        Console.WriteLine("color --set: color is a freeshell utility that changes the system color. \n example: color --set red  \n colors: red, green, yellow, blue, magenta, cyan, white, gray, black");
                         break;
                     case "color --set red":
                         Console.ForegroundColor = Color.Red;
