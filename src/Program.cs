@@ -92,6 +92,9 @@ namespace freeshell
                     progInfo.PrintInfo();
                     System.Console.WriteLine("\n Thank you for using Freeshell!");
                     break;
+                    case "fpm update":
+                    plugins.checkForUpdates();
+                    break;
                     default:
                         Console.WriteLine($"{input} Not Found. Type help for help.");
                         break;
