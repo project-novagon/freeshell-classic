@@ -80,13 +80,18 @@ namespace freeshell
                         Console.WriteLine("white");
                         break;
                     case "color --set gray":
-                        Console.ForegroundColor = Color.Gray;
+                        Console.ForegroundColor = Color.DarkGray;
                         Console.WriteLine("gray");
                         break;
                     case "color --set black":
                         Console.ForegroundColor = Color.Black;
                         Console.WriteLine("black");
                         break;
+                    case "freefetch":
+                    System.Console.WriteLine("Free.shell();");
+                    progInfo.PrintInfo();
+                    System.Console.WriteLine("\n Thank you for using Freeshell!");
+                    break;
                     default:
                         Console.WriteLine($"{input} Not Found. Type help for help.");
                         break;
