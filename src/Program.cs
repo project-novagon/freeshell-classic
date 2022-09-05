@@ -31,7 +31,7 @@ namespace freeshell
                     switch (input)
                     {
                         case "help":
-                            Console.WriteLine("FRESHELL.NET help \n about: shows the project link \n exit: exits the program \n figlet: make a text to ascii text. \n clcon: clears the console \n color: changes the color \n the project is built with c# and .NET\n Thanks");
+                            Console.WriteLine("FRESHELL.NET help \n about: shows the project link \n exit: exits the program \n figlet: make a text to ascii text. \n clcon: clears the console \n color: changes the color. type in  \"color\" for more help. \n the project is built with c# and .NET\n Thanks");
                             break;
                         case "exit":
                             Console.ForegroundColor = Color.White;
