@@ -1,7 +1,10 @@
-namespace freeshell{
-    public class plugins{
-        public static void checkForUpdates(){
-
+namespace freeshell
+{
+    public class plugins
+    {
+        public static void checkForUpdates()
+        {
+            // ! THIS IS JUST FOR SHOW !
             System.Console.WriteLine("Checking for updates... [fpm]");
             Thread.Sleep(1000);
             System.Console.WriteLine("Updates found! [fpm]");

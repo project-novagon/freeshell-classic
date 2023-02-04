@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/novagon/freeshell/freeshell.csproj": {}
+    "/home/novagondeveloper/Desktop/freeshell/freeshell/freeshell.csproj": {}
   },
   "projects": {
-    "/home/novagon/freeshell/freeshell.csproj": {
+    "/home/novagondeveloper/Desktop/freeshell/freeshell/freeshell.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/novagon/freeshell/freeshell.csproj",
+        "projectUniqueName": "/home/novagondeveloper/Desktop/freeshell/freeshell/freeshell.csproj",
         "projectName": "freeshell",
-        "projectPath": "/home/novagon/freeshell/freeshell.csproj",
-        "packagesPath": "/home/novagon/.nuget/packages/",
-        "outputPath": "/home/novagon/freeshell/obj/",
+        "projectPath": "/home/novagondeveloper/Desktop/freeshell/freeshell/freeshell.csproj",
+        "packagesPath": "/home/novagondeveloper/.nuget/packages/",
+        "outputPath": "/home/novagondeveloper/Desktop/freeshell/freeshell/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/novagon/.nuget/NuGet/NuGet.Config"
+          "/home/novagondeveloper/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.108/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.113/RuntimeIdentifierGraph.json"
         }
       }
     }
