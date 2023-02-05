@@ -56,7 +56,7 @@ namespace freeshell
                         Console.WriteLine(welcome);
                         break;
                     case "color":
-                        Console.WriteLine("color: color is a freeshell utility that changes the system color. \n example: color --set {color}  \n colors: red, green, yellow, blue, magenta, cyan, white, gray, black");
+                        plugins.abtColor();                        
                         break;
                     case "color --set red":
                         Console.ForegroundColor = Color.Red;

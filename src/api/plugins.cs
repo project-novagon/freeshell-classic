@@ -1,3 +1,8 @@
+using System.Diagnostics;
+using Color = System.ConsoleColor;
+using Figgle;
+using System;
+
 namespace freeshell
 {
     public class plugins
@@ -41,5 +46,9 @@ namespace freeshell
             Thread.Sleep(1000);
             System.Console.WriteLine("Updates downloaded! [fpm]");
         }
+       
+            public static void abtColor(){
+                Console.WriteLine("color: color is a freeshell plugin that changes the system color. \n example: color --set {color}  \n colors: red, green, yellow, blue, magenta, cyan, white, gray, black");
+            }
     }
 }
