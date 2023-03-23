@@ -10,6 +10,5 @@ whatever it is, just use an OSS terminal
 - Gets Always new features
 - Open-Source (OSS)
 ![Freeshell splash pic](https://user-images.githubusercontent.com/102538497/179985032-ceff1a3d-ed1c-4f47-b64f-d33fbf719349.png)
-**also made by iDev _lol_**
-
+made in germany by dvlnx
 [Download Freeshell (_may be older_)](bin/Debug/net6.0/FreeshellNoSetup.zip)
