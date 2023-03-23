@@ -120,7 +120,7 @@ namespace freeshell
 
         public ProgramInfo()
         {
-            VersionNumber = 2.01;
+            VersionNumber = 2.1;
             VersionName = "Freeshell";
             Author = "iDevYT";
         }

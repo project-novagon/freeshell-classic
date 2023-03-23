@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ty04R8feZBWU7+NvqMDh0jcPOcbQmJb0mYwuveTjL7xRNU8hSG3L4pDfYMnDKqmCb14B80IfAetP3DcLlB211Q==",
+  "dgSpecHash": "BJPwKxPd/ogCdD9TaWuPYKP+ohH+OHTmz6DoZ0BwbmAXwwo4MRY6YGGBiX0zL0P3tYQgRB5O988U/u2Pvij+Kg==",
   "success": true,
-  "projectFilePath": "/home/novagondeveloper/Desktop/freeshell/freeshell/freeshell.csproj",
+  "projectFilePath": "/home/novagondeveloper/freeshell/freeshell/freeshell.csproj",
   "expectedPackageFiles": [
     "/home/novagondeveloper/.nuget/packages/figgle/0.4.0/figgle.0.4.0.nupkg.sha512",
     "/home/novagondeveloper/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
