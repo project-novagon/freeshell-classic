@@ -1,3 +1,5 @@
 /.vs
 .vs/slnx.sqlite
 *.zip
+/bin
+/obj
