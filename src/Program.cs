@@ -13,19 +13,14 @@ namespace freeshell
             ProgramInfo progInfo = new ProgramInfo();
             string welcome = FiggleFonts.Standard.Render("Welcome To Freeshell!");
             Console.WriteLine(welcome);
-            Console.ForegroundColor = Color.Green;
             progInfo.PrintInfo();
             bool commands = true;
             while (commands)
             {
-                Console.Write(". ~/ ");
-                Console.ForegroundColor = Color.Red;
+                Console.Write("( ~/ )");
                 Console.Write("> ");
-                Console.ForegroundColor = Color.Yellow;
                 Console.Write("> ");
-                Console.ForegroundColor = Color.Blue;
                 Console.Write("§ ");
-                Console.ForegroundColor = Color.Green;
                 string? input = Console.ReadLine();
                 Console.WriteLine($"running {input}");
                 switch (input)

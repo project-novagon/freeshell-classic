@@ -21,7 +21,7 @@ namespace freeshell
                     System.Console.WriteLine("Done!");
                     commands = false;           
                 }
-            } 
+            }
         }
-    } 
+    }
 }
