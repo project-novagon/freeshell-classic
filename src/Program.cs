@@ -34,7 +34,7 @@ namespace freeshell
                         commands = false;
                         break;
                     case "about":
-                        Console.WriteLine($"{progInfo.VersionName} version {progInfo.VersionNumber} by {progInfo.Author} \n GH repo: https://github.com/iDevYT/freeshell \n Enjoy! ");
+                        Console.WriteLine($"Freeshell version {progInfo.VersionNumber} by {progInfo.Author} \n GH repo: https://github.com/iDevYT/freeshell \n Enjoy! ");
                         break;
                     case "figlet":
                         figlet.Run(input);
