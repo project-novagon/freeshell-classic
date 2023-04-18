@@ -108,21 +108,21 @@ namespace freeshell
     public class ProgramInfo
     {
         public double VersionNumber { get; set; }
-        public string VersionName { get; set; }
+        public string appName { get; set; }
         public string Author { get; set; }
 
 
 
         public ProgramInfo()
         {
-            VersionNumber = 2.1;
-            VersionName = "Freeshell";
+            VersionNumber = 2.2;
+            appName = "Freeshell";
             Author = "iDevYT";
         }
 
         public void PrintInfo()
         {
-            System.Console.WriteLine($"your {VersionName} is {VersionNumber}. and the .net version is {typeof(string).Assembly.ImageRuntimeVersion}");
+            System.Console.WriteLine($"your Freeshell version is {VersionNumber}. and the .net version is {typeof(string).Assembly.ImageRuntimeVersion}");
         }
     }
 }
