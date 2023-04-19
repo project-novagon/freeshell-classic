@@ -8,7 +8,7 @@ namespace freeshell
     public class Program
     {
 
-        public static void Main(string[] args)
+        public static void Main()
         {
             ProgramInfo progInfo = new ProgramInfo();
             string welcome = FiggleFonts.Standard.Render("Welcome To Freeshell!");

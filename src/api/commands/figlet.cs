@@ -19,7 +19,7 @@ namespace freeshell
                 if (input == "exit")
                 {
                     System.Console.WriteLine("Done!");
-                    commands = false;           
+                    commands = false;
                 }
             }
         }
