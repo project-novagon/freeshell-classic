@@ -12,4 +12,4 @@ whatever it is, just use an OSS terminal
 ![Freeshell splash pic](https://user-images.githubusercontent.com/102538497/179985032-ceff1a3d-ed1c-4f47-b64f-d33fbf719349.png)
 made in germany by dvlnx
 
-[Download Freeshell (_may be older_)](https://github.com/dvnlx/freeshell/releases/tag/2.0)
+[Download Freeshell (_may be older_)](https://github.com/dvnlx/freeshell/releases/)
