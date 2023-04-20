@@ -8,12 +8,6 @@ That you can work too
 The Filepath for the application is:
 `/bin/Debug/net6.0`
   
-## **Note**
+## Download Freeshell
 
-Github will build the app by its own but you can still use `dotnet build && dotnet run`
-![image](https://user-images.githubusercontent.com/88238063/178503314-8a545a1a-6679-4c6f-9ae3-2cee2c3ec921.png)
-
-
- _it **can** run on linux..._
-
-**made by david**
+download freeshell by going to the releases tab and selecting the latest or pre release
