@@ -11,7 +11,7 @@ namespace freeshell
         public static void Main()
         {
             ProgramInfo progInfo = new ProgramInfo();
-            string welcome = FiggleFonts.Standard.Render("Welcome To Freeshell!");
+            string welcome = FiggleFonts.Banner3D.Render("Free.shell();");
             Console.WriteLine(welcome);
             progInfo.PrintInfo();
             bool commands = true;
@@ -89,11 +89,6 @@ namespace freeshell
                         Console.ForegroundColor = Color.Black;
                         Console.WriteLine("Set to black!");
                         break;
-                    case "freefetch":
-                        System.Console.WriteLine("Free.shell();");
-                        progInfo.PrintInfo();
-                        System.Console.WriteLine("\n Thank you for using Freeshell!");
-                        break;
                     case "fpm update":
                         plugins.checkForUpdates();
                         break;
@@ -107,7 +102,7 @@ namespace freeshell
 
     public class ProgramInfo
     {
-        public double VersionNumber { get; set; }
+        public string VersionNumber { get; set; }
         public string appName { get; set; }
         public string Author { get; set; }
 
@@ -115,14 +110,14 @@ namespace freeshell
 
         public ProgramInfo()
         {
-            VersionNumber = 2.2;
+            VersionNumber = "2.3.0.1 beta";
             appName = "Freeshell";
             Author = "dvnlx";
         }
 
         public void PrintInfo()
         {
-            System.Console.WriteLine($"your Freeshell version is {VersionNumber}. and the .net version is {typeof(string).Assembly.ImageRuntimeVersion}");
+            System.Console.WriteLine($"your Freeshell version is {VersionNumber} and the .net version is {typeof(string).Assembly.ImageRuntimeVersion}");
         }
     }
 }
