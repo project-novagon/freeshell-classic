@@ -15,7 +15,7 @@ namespace freeshell
             var releases = client.Repository.Release.GetLatest("dvnlx", "freeshell");
             var latest = releases.Result;
             Console.WriteLine(
-                "The latest Freeshell release is{0}",
+                "The latest Freeshell release is {0}",
                 latest.TagName);
 
             Console.Write("\x1b[1mNOTE:\x1b[0m");
