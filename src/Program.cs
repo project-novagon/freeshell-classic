@@ -51,7 +51,7 @@ namespace freeshell
                         Console.WriteLine(welcome);
                         break;
                     case "color":
-                        plugins.abtColor();                        
+                        plugins.abtColor();
                         break;
                     case "color --set red":
                         Console.ForegroundColor = Color.Red;
@@ -92,6 +92,12 @@ namespace freeshell
                     case "fpm update":
                         plugins.checkForUpdates();
                         break;
+                    case "color2":
+                    plugins.abtColor2();
+                    break;
+                    case "fs update":
+                    freeshell.freeshellUpdate.allReleases();
+                    break;
                     default:
                         Console.WriteLine($"{input} Not Found. Type help for help.");
                         break;
@@ -110,7 +116,7 @@ namespace freeshell
 
         public ProgramInfo()
         {
-            VersionNumber = "2.3.0.1 beta";
+            VersionNumber = "2.3.0.2 beta";
             appName = "Freeshell";
             Author = "dvnlx";
         }

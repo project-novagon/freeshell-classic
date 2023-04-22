@@ -66,3 +66,4 @@
 /home/novagondeveloper/freeshell/freeshell/obj/Debug/net6.0/ref/freeshell.dll
 /home/novagondeveloper/freeshell/freeshell/obj/Debug/net6.0/freeshell.pdb
 /home/novagondeveloper/freeshell/freeshell/obj/Debug/net6.0/freeshell.genruntimeconfig.cache
+/home/novagondeveloper/Desktop/freeshell/freeshell/bin/Debug/net6.0/Octokit.dll

@@ -93,6 +93,15 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
+      "Octokit/5.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Octokit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Octokit.dll": {}
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -1301,6 +1310,20 @@
         "dotnet_library_license.txt",
         "netstandard.library.1.6.1.nupkg.sha512",
         "netstandard.library.nuspec"
+      ]
+    },
+    "Octokit/5.0.4": {
+      "sha512": "Voup3PUC6YtiNQIvcOCqQXEA4qB1G2D7oWW1I+tjrBoEf2mHvz/6+IRnA7y6+Pd8sV+j9sr2rXhduIBO8k7guA==",
+      "type": "package",
+      "path": "octokit/5.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Octokit.dll",
+        "lib/netstandard2.0/Octokit.xml",
+        "octokit.5.0.4.nupkg.sha512",
+        "octokit.nuspec",
+        "octokit.png"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -4494,7 +4517,8 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Figgle >= 0.4.0"
+      "Figgle >= 0.4.0",
+      "Octokit >= 5.0.4"
     ]
   },
   "packageFolders": {
@@ -4503,11 +4527,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/novagondeveloper/freeshell/freeshell/freeshell.csproj",
+      "projectUniqueName": "/home/novagondeveloper/Desktop/freeshell/freeshell/freeshell.csproj",
       "projectName": "freeshell",
-      "projectPath": "/home/novagondeveloper/freeshell/freeshell/freeshell.csproj",
+      "projectPath": "/home/novagondeveloper/Desktop/freeshell/freeshell/freeshell.csproj",
       "packagesPath": "/home/novagondeveloper/.nuget/packages/",
-      "outputPath": "/home/novagondeveloper/freeshell/freeshell/obj/",
+      "outputPath": "/home/novagondeveloper/Desktop/freeshell/freeshell/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/novagondeveloper/.nuget/NuGet/NuGet.Config"
@@ -4537,6 +4561,10 @@
           "Figgle": {
             "target": "Package",
             "version": "[0.4.0, )"
+          },
+          "Octokit": {
+            "target": "Package",
+            "version": "[5.0.4, )"
           }
         },
         "imports": [
