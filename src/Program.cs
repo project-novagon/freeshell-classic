@@ -96,7 +96,7 @@ namespace freeshell
                     plugins.abtColor2();
                     break;
                     case "fs update":
-                    freeshell.freeshellUpdate.allReleases();
+                    freeshell.freeshellUpdate.LatestRelease();
                     break;
                     default:
                         Console.WriteLine($"{input} Not Found. Type help for help.");

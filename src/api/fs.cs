@@ -8,7 +8,7 @@ namespace freeshell
 {
     public class freeshellUpdate
     {
-        public static void allReleases()
+        public static void LatestRelease()
         {
 
             var client = new GitHubClient(new ProductHeaderValue("freeshell"));
