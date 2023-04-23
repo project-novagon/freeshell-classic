@@ -53,50 +53,11 @@ namespace freeshell
                     case "color":
                         plugins.abtColor();
                         break;
-                    case "color --set red":
-                        Console.ForegroundColor = Color.Red;
-                        Console.WriteLine("Set to red!");
-                        break;
-                    case "color --set green":
-                        Console.ForegroundColor = Color.Green;
-                        Console.WriteLine("Set to green!");
-                        break;
-                    case "color --set yellow":
-                        Console.ForegroundColor = Color.Yellow;
-                        Console.WriteLine("Set to yello!w");
-                        break;
-                    case "color --set blue":
-                        Console.ForegroundColor = Color.Blue;
-                        Console.WriteLine("Set to blue"!);
-                        break;
-                    case "color --set magenta":
-                        Console.ForegroundColor = Color.Magenta;
-                        Console.WriteLine("Set to magen!ta");
-                        break;
-                    case "color --set cyan":
-                        Console.ForegroundColor = Color.Cyan;
-                        Console.WriteLine("Set to cyan"!);
-                        break;
-                    case "color --set white":
-                        Console.ForegroundColor = Color.White;
-                        Console.WriteLine("Set to white!");
-                        break;
-                    case "color --set gray":
-                        Console.ForegroundColor = Color.DarkGray;
-                        Console.WriteLine("Set to gray"!);
-                        break;
-                    case "color --set black":
-                        Console.ForegroundColor = Color.Black;
-                        Console.WriteLine("Set to black!");
-                        break;
                     case "fpm update":
                         plugins.checkForUpdates();
                         break;
-                    case "color2":
-                    plugins.abtColor2();
-                    break;
-                    case var str when str.StartsWith("color2 -s"):
-                    input = input.Replace ("color2 -s", "");
+                    case var str when str.StartsWith("color -s"):
+                    input = input.Replace ("color -s", "");
                     color.Run(input);
                     break;
                     case "fs update":
