@@ -9,5 +9,4 @@ The Filepath for the application is:
 `/bin/Debug/net6.0`
   
 ## Download Freeshell
-
 download freeshell by going to the releases tab and selecting the latest or pre release
