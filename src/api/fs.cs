@@ -10,7 +10,7 @@ namespace freeshell
     {
         public static void LatestRelease()
         {
-
+            try{
             var client = new GitHubClient(new ProductHeaderValue("freeshell"));
             var releases = client.Repository.Release.GetLatest("dvnlx", "freeshell");
             var latest = releases.Result;
@@ -27,6 +27,10 @@ namespace freeshell
             System.Console.WriteLine("---");
             System.Console.WriteLine("https://github.com/dvnlx/freeshell/releases/tag/v2.3.0.1_beta");
             System.Console.WriteLine("---");
+            }
+            catch {
+                System.Console.WriteLine("Could not find newest Release! check your internet connection (FS04)");
+            }
 
         }
     }

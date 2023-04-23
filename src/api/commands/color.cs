@@ -1,4 +1,3 @@
-using Figgle;
 using Color = System.ConsoleColor;
 
 namespace freeshell
@@ -7,9 +6,30 @@ namespace freeshell
     {
         public static void Run(string? argcol)
         {
-            Console.ForegroundColor = (ConsoleColor)Enum.Parse(typeof(ConsoleColor), argcol);
-            Console.WriteLine($"Set to {argcol}");
-
+         if (!string.IsNullOrEmpty(argcol))
+        {
+            try
+            {
+                ConsoleColor parsedColor;
+                if (Enum.TryParse(argcol, true, out parsedColor))
+                {
+                    Console.ForegroundColor = parsedColor;
+                    Console.WriteLine($"Set to {argcol}");
+                }
+                else
+                {
+                    Console.WriteLine("Invalid color (FS02)");
+                }
+            }
+            catch
+            {
+                Console.WriteLine("Invalid color (FS02)");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Input color is empty (FS03)");
+        }
         }
     }
 }

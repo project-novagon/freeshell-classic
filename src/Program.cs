@@ -95,11 +95,15 @@ namespace freeshell
                     case "color2":
                     plugins.abtColor2();
                     break;
+                    case var str when str.StartsWith("color2 -s"):
+                    input = input.Replace ("color2 -s", "");
+                    color.Run(input);
+                    break;
                     case "fs update":
                     freeshell.freeshellUpdate.LatestRelease();
                     break;
                     default:
-                        Console.WriteLine($"{input} Not Found. Type help for help.");
+                        Console.WriteLine($"{input} Not Found. Type help for help. (FS01)");
                         break;
                 }
             }
