@@ -2,14 +2,18 @@
 using Color = System.ConsoleColor;
 using Figgle;
 using System;
-
+using Octokit;
 namespace freeshell
 {
     public class Program
     {
 
+
         public static void Main()
         {
+            var client = new GitHubClient(new ProductHeaderValue("freeshell"));
+            var releases = client.Repository.Release.GetLatest("dvnlx", "freeshell");
+            var latest = releases.Result;
             ProgramInfo progInfo = new ProgramInfo();
             string welcome = FiggleFonts.Banner3D.Render("Free.shell();");
             Console.WriteLine(welcome);
@@ -26,7 +30,7 @@ namespace freeshell
                 switch (input)
                 {
                     case "help":
-                        Console.WriteLine("FRESHELL.NET help \n about: shows the project link \n exit: exits the program \n figlet: make a text to ascii text. \n clcon: clears the console \n color: changes the color. type in  \"color\" for more help. \n the project is built with c# and .NET\n Thanks");
+                        Console.WriteLine("FRESHELL.NET help \n about: shows the project link \n exit: exits the program \n figlet: make a text to ascii text. \n clcon: clears the console \n color: changes the color. type in  \"color\" for more help. \n reload: reloads freeshell. \n fs: the control command for freeshell. type in \"fs\" for help. \n the project is built with c# and .NET\n Thanks");
                         break;
                     case "exit":
                         Console.ForegroundColor = Color.White;
@@ -34,7 +38,14 @@ namespace freeshell
                         commands = false;
                         break;
                     case "about":
-                        Console.WriteLine($"Freeshell version {progInfo.VersionNumber} by {progInfo.Author} \n GH repo: https://github.com/dvnlx/freeshell \n Enjoy! ");
+                        Console.WriteLine(FiggleFonts.Banner3D.Render("Free.shell();"));
+                        Console.WriteLine($"Freeshell {progInfo.VersionNumber} by dvnlx \n GH repo: https://github.com/dvnlx/freeshell \n Enjoy! ");
+                        if(latest.TagName == progInfo.VersionNumber){
+                            System.Console.WriteLine("You Have the newest version of freeshell.");
+                        }
+                        else{
+                            System.Console.WriteLine("You dont have the newest freeshell version. download it by typing \"fs update\"");
+                        }
                         break;
                     case "figlet":
                         figlet.Run(input);
@@ -49,6 +60,7 @@ namespace freeshell
                     case "reload":
                         System.Console.WriteLine("Reloading...");
                         Console.WriteLine(welcome);
+                        progInfo.PrintInfo();
                         break;
                     case "color":
                         plugins.abtColor();
@@ -75,15 +87,13 @@ namespace freeshell
     {
         public string VersionNumber { get; set; }
         public string appName { get; set; }
-        public string Author { get; set; }
 
 
 
         public ProgramInfo()
         {
-            VersionNumber = "2.3.0.2 beta";
+            VersionNumber = "v2.3.0";
             appName = "Freeshell";
-            Author = "dvnlx";
         }
 
         public void PrintInfo()
