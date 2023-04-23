@@ -40,11 +40,17 @@ namespace freeshell
                     case "about":
                         Console.WriteLine(FiggleFonts.Banner3D.Render("Free.shell();"));
                         Console.WriteLine($"Freeshell {progInfo.VersionNumber} by dvnlx \n GH repo: https://github.com/dvnlx/freeshell \n Enjoy! ");
+                        try{
+
                         if(latest.TagName == progInfo.VersionNumber){
                             System.Console.WriteLine("You Have the newest version of freeshell.");
                         }
                         else{
-                            System.Console.WriteLine("You dont have the newest freeshell version. download it by typing \"fs update\"");
+                            System.Console.WriteLine($"You dont have the newest freeshell version. download it by typing \"fs update\". Current release: {latest.TagName}, Your release: {progInfo.VersionNumber}");
+                        }
+                        }
+                        catch{
+                            System.Console.WriteLine("Could not check for releases! check your internet connection (FS04)");
                         }
                         break;
                     case "figlet":
