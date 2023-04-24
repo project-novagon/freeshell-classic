@@ -106,10 +106,12 @@ namespace freeshell
             else
             {
                 System.Console.WriteLine("Freeshell Config Not Found! if this is the first time using freeshelll, ignore this message. (FS06)");
-                Task.Delay(500);
+                Task.Delay(1000);
                 System.Console.WriteLine("Creating file freeshell.cfg");
                 File.Create(cfgFile).Close();
-                System.Console.WriteLine("File Created!");
+                System.Console.WriteLine("File Created! Loading into freeshell...");
+                Task.Delay(1000);
+                Main();
             }
         }
     }
