@@ -4,8 +4,33 @@ using Figgle;
 using System;
 using Octokit;
 using System.IO;
+using System.Linq;
 namespace freeshell
 {
+    public class ProgramInfo
+    {
+
+        public string cfgFile { get; set; }
+        public string VersionNumber { get; set; }
+        public string appName { get; set; }
+        public string[] cfgReader {get; set;}
+
+        public ProgramInfo()
+        {
+            VersionNumber = "v2.3.1";
+            appName = "Freeshell";
+            cfgFile = "freeshell.cfg";
+            cfgReader = File.ReadAllLines(cfgFile);
+        }
+
+        public void PrintInfo()
+        {
+
+
+            System.Console.WriteLine($"your Freeshell version is {VersionNumber} and the .net version is {typeof(string).Assembly.ImageRuntimeVersion}");
+        }
+    }
+
     public class Program
     {
 
@@ -17,9 +42,7 @@ namespace freeshell
             var latest = releases.Result;
             ProgramInfo progInfo = new ProgramInfo();
             bool commands = true;
-            string cfgFile = "freeshell.cfg";
-
-            if (File.Exists(cfgFile))
+            if (File.Exists(progInfo.cfgFile))
             {
                 string welcome = FiggleFonts.Banner3D.Render("Free.shell();");
                 Console.WriteLine(welcome);
@@ -108,30 +131,11 @@ namespace freeshell
                 System.Console.WriteLine("Freeshell Config Not Found! if this is the first time using freeshelll, ignore this message. (FS06)");
                 Task.Delay(1000);
                 System.Console.WriteLine("Creating file freeshell.cfg");
-                File.Create(cfgFile).Close();
+                File.Create(progInfo.cfgFile).Close();
                 System.Console.WriteLine("File Created! Loading into freeshell...");
                 Task.Delay(1000);
                 Main();
             }
-        }
-    }
-
-    public class ProgramInfo
-    {
-        public string VersionNumber { get; set; }
-        public string appName { get; set; }
-
-
-
-        public ProgramInfo()
-        {
-            VersionNumber = "v2.3.1";
-            appName = "Freeshell";
-        }
-
-        public void PrintInfo()
-        {
-            System.Console.WriteLine($"your Freeshell version is {VersionNumber} and the .net version is {typeof(string).Assembly.ImageRuntimeVersion}");
         }
     }
 }
