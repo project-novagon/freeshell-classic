@@ -26,64 +26,73 @@ namespace freeshell
                 Console.Write("> ");
                 Console.Write("§ ");
                 string? input = Console.ReadLine();
-                Console.WriteLine($"running {input}");
-                switch (input)
+                if (!string.IsNullOrEmpty(input))
                 {
-                    case "help":
-                        Console.WriteLine("FRESHELL.NET help \n about: shows the project link \n exit: exits the program \n figlet: make a text to ascii text. \n clcon: clears the console \n color: changes the color. type in  \"color\" for more help. \n reload: reloads freeshell. \n fs: the control command for freeshell. type in \"fs\" for help. \n the project is built with c# and .NET\n Thanks");
-                        break;
-                    case "exit":
-                        Console.ForegroundColor = Color.White;
-                        Console.WriteLine("Bye!");
-                        commands = false;
-                        break;
-                    case "about":
-                        Console.WriteLine(FiggleFonts.Banner3D.Render("Free.shell();"));
-                        Console.WriteLine($"Freeshell {progInfo.VersionNumber} by dvnlx \n GH repo: https://github.com/dvnlx/freeshell \n Enjoy! ");
-                        try{
 
-                        if(latest.TagName == progInfo.VersionNumber){
-                            System.Console.WriteLine("You Have the newest version of freeshell.");
-                        }
-                        else{
-                            System.Console.WriteLine($"You dont have the newest freeshell version. download it by typing \"fs update\". Current release: {latest.TagName}, Your release: {progInfo.VersionNumber}");
-                        }
-                        }
-                        catch{
-                            System.Console.WriteLine("Could not check for releases! check your internet connection (FS04)");
-                        }
-                        break;
-                    case "figlet":
-                        figlet.Run(input);
-                        break;
-                    case "clcon":
-                        Console.Clear();
-                        progInfo.PrintInfo();
-                        break;
-                    case "hello":
-                        System.Console.WriteLine("Hello World!");
-                        break;
-                    case "reload":
-                        System.Console.WriteLine("Reloading...");
-                        Console.WriteLine(welcome);
-                        progInfo.PrintInfo();
-                        break;
-                    case "color":
-                        plugins.abtColor();
-                        break;
-                    case "fpm update":
-                        plugins.checkForUpdates();
-                        break;
-                    case var str when str.StartsWith("color -s"):
-                    input = input.Replace ("color -s", "");
-                    color.Run(input);
-                    break;
-                    case "fs update":
-                    freeshell.freeshellUpdate.LatestRelease();
-                    break;
-                    default:
-                        Console.WriteLine($"{input} Not Found. Type help for help. (FS01)");
-                        break;
+                    switch (input)
+                    {
+                        case "help":
+                            Console.WriteLine("FRESHELL.NET help \n about: shows the project link \n exit: exits the program \n figlet: make a text to ascii text. \n clcon: clears the console \n color: changes the color. type in  \"color\" for more help. \n reload: reloads freeshell. \n fs: the control command for freeshell. type in \"fs\" for help. \n the project is built with c# and .NET\n Thanks");
+                            break;
+                        case "exit":
+                            Console.ForegroundColor = Color.White;
+                            Console.WriteLine("Bye!");
+                            commands = false;
+                            break;
+                        case "about":
+                            Console.WriteLine(FiggleFonts.Banner3D.Render("Free.shell();"));
+                            Console.WriteLine($"Freeshell {progInfo.VersionNumber} by dvnlx \n GH repo: https://github.com/dvnlx/freeshell \n Enjoy! ");
+                            try
+                            {
+
+                                if (latest.TagName == progInfo.VersionNumber)
+                                {
+                                    System.Console.WriteLine("You Have the newest version of freeshell.");
+                                }
+                                else
+                                {
+                                    System.Console.WriteLine($"You dont have the newest freeshell version. download it by typing \"fs update\". Current release: {latest.TagName}, Your release: {progInfo.VersionNumber}");
+                                }
+                            }
+                            catch
+                            {
+                                System.Console.WriteLine("Could not check for releases! check your internet connection (FS04)");
+                            }
+                            break;
+                        case "figlet":
+                            figlet.Run(input);
+                            break;
+                        case "clcon":
+                            Console.Clear();
+                            progInfo.PrintInfo();
+                            break;
+                        case "hello":
+                            System.Console.WriteLine("Hello World!");
+                            break;
+                        case "reload":
+                            System.Console.WriteLine("Reloading...");
+                            Console.WriteLine(welcome);
+                            progInfo.PrintInfo();
+                            break;
+                        case "color":
+                            plugins.abtColor();
+                            break;
+                        case "fpm update":
+                            plugins.checkForUpdates();
+                            break;
+                        case var str when str.StartsWith("color -s"):
+                            input = input.Replace("color -s", "");
+                            color.Run(input);
+                            break;
+                        case "fs update":
+                            freeshell.freeshellUpdate.LatestRelease();
+                            break;
+                        default:
+                            Console.WriteLine($"{input} Not Found. Type help for help. (FS01)");
+                            break;
+                    }
+                }else{
+                    System.Console.WriteLine("No command entered (FS05)");
                 }
             }
         }
