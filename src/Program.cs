@@ -12,22 +12,20 @@ namespace freeshell
 
         public string cfgFile { get; set; }
         public string VersionNumber { get; set; }
-        public string appName { get; set; }
         public string[] cfgReader {get; set;}
 
         public ProgramInfo()
         {
             VersionNumber = "v2.3.1";
-            appName = "Freeshell";
             cfgFile = "freeshell.cfg";
             cfgReader = File.ReadAllLines(cfgFile);
         }
-
         public void PrintInfo()
         {
-
-
-            System.Console.WriteLine($"your Freeshell version is {VersionNumber} and the .net version is {typeof(string).Assembly.ImageRuntimeVersion}");
+            string nameCFG = "NAME=";
+            string outLine = cfgReader.FirstOrDefault(line => line.Contains(nameCFG));
+            outLine = outLine.Replace("NAME=", "");
+            System.Console.WriteLine($"Hello {outLine}! your Freeshell version is {VersionNumber} and the .net version is {typeof(string).Assembly.ImageRuntimeVersion}");
         }
     }
 
