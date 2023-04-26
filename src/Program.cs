@@ -85,7 +85,11 @@ namespace freeshell
                             color.Run(input);
                             break;
                         case "fs update":
-                            freeshell.freeshellUpdate.LatestRelease();
+                            fs.updateLatest();
+                            break;
+                            case var str when str.StartsWith("fs search -r"):
+                            input = input.Replace("fs search -r ", "");
+                            fs.searchReleases(input);
                             break;
                         default:
                             Console.WriteLine($"{input} Not Found. Type help for help. (FS01)");
