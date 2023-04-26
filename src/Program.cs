@@ -111,7 +111,7 @@ namespace freeshell
 
         public ProgramInfo()
         {
-            VersionNumber = "v2.3.1";
+            VersionNumber = "v2.3.2";
             appName = "Freeshell";
         }
 
