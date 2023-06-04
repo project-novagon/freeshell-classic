@@ -11,6 +11,8 @@ namespace freeshell
 
         public static void Main()
         {
+            string username = Environment.UserName;
+
             var client = new GitHubClient(new ProductHeaderValue("freeshell"));
             var releases = client.Repository.Release.GetLatest("dvnlx", "freeshell");
             var latest = releases.Result;
@@ -21,7 +23,7 @@ namespace freeshell
             bool commands = true;
             while (commands)
             {
-                Console.Write("( ~/ )");
+                Console.Write($"( {username} / root )");
                 Console.Write("> ");
                 Console.Write("> ");
                 Console.Write("§ ");

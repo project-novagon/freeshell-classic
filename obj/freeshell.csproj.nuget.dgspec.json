@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/novagondeveloper/Desktop/freeshell/freeshell/freeshell.csproj": {}
+    "/run/media/novagondeveloper/Main Drive/My Projects/Coding/freeshell/freeshell/freeshell.csproj": {}
   },
   "projects": {
-    "/home/novagondeveloper/Desktop/freeshell/freeshell/freeshell.csproj": {
+    "/run/media/novagondeveloper/Main Drive/My Projects/Coding/freeshell/freeshell/freeshell.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/novagondeveloper/Desktop/freeshell/freeshell/freeshell.csproj",
+        "projectUniqueName": "/run/media/novagondeveloper/Main Drive/My Projects/Coding/freeshell/freeshell/freeshell.csproj",
         "projectName": "freeshell",
-        "projectPath": "/home/novagondeveloper/Desktop/freeshell/freeshell/freeshell.csproj",
+        "projectPath": "/run/media/novagondeveloper/Main Drive/My Projects/Coding/freeshell/freeshell/freeshell.csproj",
         "packagesPath": "/home/novagondeveloper/.nuget/packages/",
-        "outputPath": "/home/novagondeveloper/Desktop/freeshell/freeshell/obj/",
+        "outputPath": "/run/media/novagondeveloper/Main Drive/My Projects/Coding/freeshell/freeshell/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/novagondeveloper/.nuget/NuGet/NuGet.Config"
@@ -53,16 +53,23 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[6.0.16, 6.0.16]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.115/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/7.0.105/RuntimeIdentifierGraph.json"
         }
       }
     }
