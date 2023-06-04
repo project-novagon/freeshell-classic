@@ -95,6 +95,7 @@ namespace freeshell
                             input = input.Replace("fs search -r ", "");
                             fs.searchReleases(input);
                             break;
+                            // TODO: add cd, dskinf and ls commands for filesystem support
                         default:
                             Console.WriteLine($"{input} Not Found. Type help for help. (FS01)");
                             break;
