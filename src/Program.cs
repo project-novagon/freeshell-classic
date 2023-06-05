@@ -36,7 +36,7 @@ namespace freeshell
                     switch (input)
                     {
                         case "help":
-                            Console.WriteLine("FRESHELL.NET help \n about: shows the project link \n exit: exits the program \n figlet: make a text to ascii text. \n clcon: clears the console \n color: changes the color. type in  \"color\" for more help. \n reload: reloads freeshell. \n fs: the control command for freeshell. type in \"fs\" for help. \n the project is built with c# and .NET\n Thanks");
+                            Console.WriteLine("FRESHELL.NET help \n about: shows the project link \n exit: exits the program \n figlet: make a text to ascii text. \n clcon: clears the console \n color: changes the color. type in  \"color\" for more help. \n reload: reloads freeshell. \n fs: the control command for freeshell. type in \"fs\" for help. \n usrinf: showes user information \nthe project is built with c# and .NET\n Thanks");
                             break;
                         case "exit":
                             Console.ForegroundColor = Color.White;
@@ -95,6 +95,10 @@ namespace freeshell
                             input = input.Replace("fs search -r ", "");
                             fs.searchReleases(input);
                             break;
+                        case "usrinf":
+                            System.Console.WriteLine("Currently Logged In:");
+                            System.Console.WriteLine($"{username}@{computerName}");
+                        break;
                             // TODO: add cd, dskinf and ls commands for filesystem support
                         default:
                             Console.WriteLine($"{input} Not Found. Type help for help. (FS01)");
