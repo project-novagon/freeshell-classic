@@ -3,6 +3,7 @@ using Color = System.ConsoleColor;
 using Figgle;
 using System;
 using Octokit;
+using freeshell.cmd;
 namespace freeshell
 {
     public class Program
@@ -100,74 +101,15 @@ namespace freeshell
                             System.Console.WriteLine($"{username}@{computerName}");
                             break;
                         case "dskinf":
-                            string drivePath = "/"; // Replace with the path of the directory you want to check
-                            long freeSpace;
-
-                            if (Environment.OSVersion.Platform == PlatformID.Win32NT)
-                            {
-                                DriveInfo driveInfo = new DriveInfo("C"); // Replace "C" with the drive letter you want to check
-                                freeSpace = driveInfo.AvailableFreeSpace;
-                            }
-                            else if (Environment.OSVersion.Platform == PlatformID.Unix)
-                            {
-                                Process process = new Process();
-                                process.StartInfo.FileName = "df";
-                                process.StartInfo.Arguments = $"-k --output=avail {drivePath}";
-                                process.StartInfo.RedirectStandardOutput = true;
-                                process.StartInfo.UseShellExecute = false;
-                                process.StartInfo.CreateNoWindow = true;
-
-                                process.Start();
-                                string output = process.StandardOutput.ReadToEnd();
-                                process.WaitForExit();
-
-                                string[] lines = output.Trim().Split('\n');
-                                string[] fields = lines[1].Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                                long availableKilobytes = long.Parse(fields[0]);
-                                freeSpace = availableKilobytes * 1024;
-                            }
-                            else
-                            {
-                                Console.WriteLine("Operating system not supported.");
-                                return;
-                            }
-
-                            Console.WriteLine($"Free Space on your partition: {FormatBytes(freeSpace)}");
-
-                            string fileSystem;
-
-        if (Environment.OSVersion.Platform == PlatformID.Win32NT)
-        {
-            DriveInfo driveInfo = new DriveInfo("C"); // Replace "C" with the drive letter you want to check
-            fileSystem = driveInfo.DriveFormat;
-        }
-        else if (Environment.OSVersion.Platform == PlatformID.Unix)
-        {
-            Process process = new Process();
-            process.StartInfo.FileName = "df";
-            process.StartInfo.Arguments = $"-T {drivePath}";
-            process.StartInfo.RedirectStandardOutput = true;
-            process.StartInfo.UseShellExecute = false;
-            process.StartInfo.CreateNoWindow = true;
-
-            process.Start();
-            string output = process.StandardOutput.ReadToEnd();
-            process.WaitForExit();
-
-            string[] lines = output.Trim().Split('\n');
-            string[] fields = lines[1].Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-            fileSystem = fields[1];
-        }
-        else
-        {
-            Console.WriteLine("Operating system not supported.");
-            return;
-        }
-
-        Console.WriteLine($"Partition File System: {fileSystem}");
-
+                            dskinf.run();
                             break;
-                        // TODO: add cd and ls commands for filesystem support
+                        case "ls":
+                        // TODO: make it work
+                            System.Console.WriteLine("[DEMO] Contents of \"/~\": ");
+                            System.Console.WriteLine("FILE: test.txt");
+                            System.Console.WriteLine("FOLDER: folder1");
+                            break;
+                        // TODO: add ls commands for filesystem support
                         default:
                             Console.WriteLine($"{input} Not Found. Type help for help. (FS01)");
                             break;
@@ -180,16 +122,7 @@ namespace freeshell
             }
         }
 
-        static string FormatBytes(long bytes)
-        {
-            const int scale = 1024;
-            string[] units = { "B", "KB", "MB", "GB", "TB", "PB" };
 
-            int magnitude = (int)Math.Log(bytes, scale);
-            decimal adjustedSize = (decimal)bytes / (1L << (magnitude * 10));
-
-            return $"{adjustedSize:n2} {units[magnitude]}";
-        }
     }
 
     public class ProgramInfo

@@ -1,6 +1,6 @@
 using Color = System.ConsoleColor;
 
-namespace freeshell
+namespace freeshell.cmd
 {
     public class color
     {
