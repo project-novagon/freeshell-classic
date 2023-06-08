@@ -104,12 +104,8 @@ namespace freeshell
                             dskinf.run();
                             break;
                         case "ls":
-                        // TODO: make it work
-                            System.Console.WriteLine("[DEMO] Contents of \"/~\": ");
-                            System.Console.WriteLine("FILE: test.txt");
-                            System.Console.WriteLine("FOLDER: folder1");
+                            cmd.listFiles.run();
                             break;
-                        // TODO: add ls commands for filesystem support
                         default:
                             Console.WriteLine($"{input} Not Found. Type help for help. (FS01)");
                             break;
