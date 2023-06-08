@@ -1,7 +1,7 @@
 
 using Figgle;
 
-namespace freeshell
+namespace freeshell.cmd
 {
     public class figlet
     {

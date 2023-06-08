@@ -3,6 +3,7 @@ using Color = System.ConsoleColor;
 using Figgle;
 using System;
 using Octokit;
+using freeshell.cmd;
 namespace freeshell
 {
     public class Program
@@ -11,6 +12,10 @@ namespace freeshell
 
         public static void Main()
         {
+            string currentFilePath = "~/";
+            string username = Environment.UserName;
+            string computerName = Environment.MachineName;
+
             var client = new GitHubClient(new ProductHeaderValue("freeshell"));
             var releases = client.Repository.Release.GetLatest("dvnlx", "freeshell");
             var latest = releases.Result;
@@ -21,7 +26,7 @@ namespace freeshell
             bool commands = true;
             while (commands)
             {
-                Console.Write("( ~/ )");
+                Console.Write($"( {username}@{computerName} / {currentFilePath} )");
                 Console.Write("> ");
                 Console.Write("> ");
                 Console.Write("§ ");
@@ -32,7 +37,7 @@ namespace freeshell
                     switch (input)
                     {
                         case "help":
-                            Console.WriteLine("FRESHELL.NET help \n about: shows the project link \n exit: exits the program \n figlet: make a text to ascii text. \n clcon: clears the console \n color: changes the color. type in  \"color\" for more help. \n reload: reloads freeshell. \n fs: the control command for freeshell. type in \"fs\" for help. \n the project is built with c# and .NET\n Thanks");
+                            Console.WriteLine("FRESHELL.NET help \n about: shows the project link \n exit: exits the program \n figlet: make a text to ascii text. \n clcon: clears the console \n color: changes the color. type in  \"color\" for more help. \n reload: reloads freeshell. \n fs: the control command for freeshell. type in \"fs\" for help. \n usrinf: showes user information \nthe project is built with c# and .NET\n Thanks");
                             break;
                         case "exit":
                             Console.ForegroundColor = Color.White;
@@ -87,19 +92,33 @@ namespace freeshell
                         case "fs update":
                             fs.updateLatest();
                             break;
-                            case var str when str.StartsWith("fs search -r"):
+                        case var str when str.StartsWith("fs search -r"):
                             input = input.Replace("fs search -r ", "");
                             fs.searchReleases(input);
+                            break;
+                        case "usrinf":
+                            System.Console.WriteLine("Currently Logged In:");
+                            System.Console.WriteLine($"{username}@{computerName}");
+                            break;
+                        case "dskinf":
+                            dskinf.run();
+                            break;
+                        case "ls":
+                            cmd.listFiles.run();
                             break;
                         default:
                             Console.WriteLine($"{input} Not Found. Type help for help. (FS01)");
                             break;
                     }
-                }else{
+                }
+                else
+                {
                     System.Console.WriteLine("No command entered (FS05)");
                 }
             }
         }
+
+
     }
 
     public class ProgramInfo

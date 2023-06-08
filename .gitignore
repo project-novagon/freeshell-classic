@@ -4,3 +4,5 @@
 /bin
 /obj
 /createrelease.sh
+obj/Debug/net6.0/
+obj/Debug/net6.0/
