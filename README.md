@@ -1,4 +1,4 @@
-# free.shell
+# freeshell classic
 ![Freeshell Badge](https://img.shields.io/badge/Freeshell-Open%20Source!-9cf)
 ![Last Commit](https://img.shields.io/github/last-commit/iDevYT/freeshell?style=flat) 
 ![.NET Build](https://img.shields.io/github/workflow/status/iDevYT/freeshell/.NET?label=.NET%20Build&logo=.net&logoColor=blue)
@@ -18,3 +18,6 @@ if anything is wrong with the compatibility table, make a issue
 
 ## Download Freeshell
 download freeshell by going to the releases tab and selecting the latest or pre release
+
+# NOTE!!
+freeshell classic (v2) is discontinued and will be replaced with a kotlin all new freeshell (v3)
